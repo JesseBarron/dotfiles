@@ -1,2 +1,4 @@
 configstore
 iterm2
+tmux/plugins
+nvim/plugin

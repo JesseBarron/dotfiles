@@ -16,6 +16,10 @@ return require('packer').startup(function(use)
 	-- Theme
 	use "savq/melange-nvim"
 
+	-- Status Bar
+	use 'feline-nvim/feline.nvim'
+	use 'nvim-tree/nvim-web-devicons'
+
 	use('nvim-treesitter/nvim-treesitter', {run= ':TSUpdate'})
 	use 'ThePrimeagen/harpoon'
 	use 'mbbill/undotree'
@@ -36,4 +40,21 @@ return require('packer').startup(function(use)
 		}
 	}
 	use 'ThePrimeagen/vim-be-good'
+	use 'aserebryakov/vim-todo-lists'
+	use {
+		'prettier/vim-prettier',
+		run = 'yarn install',
+		ft = {'javascript', 'typescript', 'css', 'less', 'scss', 'graphql', 'markdown', 'vue', 'html'}
+	}
+	-- tmux integration
+	use 'christoomey/vim-tmux-navigator'
+
+	-- comments
+	use {
+		'numToStr/Comment.nvim',
+		config = function()
+			require('Comment').setup()
+		end
+	}
 end)
+

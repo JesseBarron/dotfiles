@@ -16,3 +16,11 @@ vim.keymap.set('n', '<leader>a', ':keepjumps normal! ggVG<cr>')
 
 -- Explorer
 vim.keymap.set('n', '<leader>pv', vim.cmd.Ex)
+
+-- Put Date on cursor
+vim.keymap.set('n', '<leader>id', function () 
+	if vim.bo.filetype == 'todo' then
+		vim.cmd("put=system('date')")
+	end
+end)
+
