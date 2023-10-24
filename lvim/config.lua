@@ -7,6 +7,9 @@ vim.opt.shiftwidth = 2 -- the number of spaces inserted for each indentation
 vim.opt.tabstop = 2 -- insert 2 spaces for a tab
 vim.opt.relativenumber = true -- relative line numbers
 
+vim.o.termguicolors = true
+lvim.colorscheme = "catppuccin-mocha"
+
 -- Add current date on todo files
 vim.keymap.set('n', '<leader>id', function ()
 	if vim.bo.filetype == 'todo' then
@@ -52,7 +55,8 @@ lvim.plugins = {
     end
   },
   { 'sindrets/diffview.nvim' },
-  { "nvim-telescope/telescope-dap.nvim" }
+  { "nvim-telescope/telescope-dap.nvim" },
+  { "catppuccin/nvim" },
+  { 'christoomey/vim-tmux-navigator' }
 }
-
 
