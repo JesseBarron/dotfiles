@@ -10,19 +10,6 @@ vim.opt.relativenumber = true -- relative line numbers
 vim.o.termguicolors = true
 lvim.colorscheme = "catppuccin-mocha"
 
--- Add current date on todo files
-vim.keymap.set('n', '<leader>id', function ()
-	if vim.bo.filetype == 'todo' then
-		vim.cmd("put=system('date')")
-	end
-end)
-
-
-function PrintCWD ()
-  print(vim.fn.getcwd())
-end
-
-
 local dap = require 'dap'
 dap.adapters.php = {
   type = 'executable',
@@ -57,6 +44,17 @@ lvim.plugins = {
   { 'sindrets/diffview.nvim' },
   { "nvim-telescope/telescope-dap.nvim" },
   { "catppuccin/nvim" },
-  { 'christoomey/vim-tmux-navigator' }
+  { 'christoomey/vim-tmux-navigator' },
+  { 'phaazon/hop.nvim'},
+  { 'nvim-lua/plenary.nvim',
+    lazy = false
+  },
+  {
+    dir = '~/plugins/stackmap.vim',
+    dev = true
+  },
 }
 
+require 'user.keymappings'
+require 'user.globals'
+require 'user.plugins'

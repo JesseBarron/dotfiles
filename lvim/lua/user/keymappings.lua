@@ -8,3 +8,10 @@ lvim.builtin.which_key.mappings['h'] = {
   l = { "<cmd>HopChar2CurrentLine<CR>", "Hop Line" },
   p = { "<cmd>HopPattern<CR>", "Hop Pattern" }
 }
+
+lvim.builtin.which_key.mappings['n'] = {
+  name = 'Nvim Development',
+  x = { "<cmd>source %<CR>", "Execute Current File"},
+  t = { "<Plug>PlenaryTestFile", "Run Current Test File"}
+}
+
