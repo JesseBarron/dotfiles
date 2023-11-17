@@ -1,4 +1,9 @@
-configstore
-iterm2
+*
+*/
+!alacritty/
+!tmux/
 tmux/plugins
-nvim/plugin
+!nvim/
+!lvim/
+lvim/workspace
+
