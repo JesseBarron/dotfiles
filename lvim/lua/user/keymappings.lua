@@ -15,3 +15,9 @@ lvim.builtin.which_key.mappings['n'] = {
   t = { "<Plug>PlenaryTestFile", "Run Current Test File"}
 }
 
+-- Neorg mappings
+lvim.builtin.which_key.mappings['O'] = {
+  name = 'Neorg',
+  w = { ':Neorg workspace <Right>', "Open a workspace of your choosing" },
+  j = { '<cmd>Neorg journal today<CR>', 'Open journey entry for today' }
+}
