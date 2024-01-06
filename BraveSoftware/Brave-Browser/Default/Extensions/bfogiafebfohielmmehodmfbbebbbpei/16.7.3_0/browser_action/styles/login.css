@@ -1,0 +1,382 @@
+#login {
+  overflow-y: auto;
+  padding: 0 24px;
+  background-color: #191919;
+  height: 544px;
+}
+#login * > label {
+  color: #d8d8d8;
+}
+#login #need-help-root {
+  display: flex;
+  justify-content: center;
+}
+#login #need-help-root .need-help-container {
+  display: flex;
+  margin-bottom: 46px;
+  flex-direction: row;
+  cursor: pointer;
+}
+#login #need-help-root .need-help-container .need-help-container-arrow {
+  background-size: 20px;
+  height: 20px;
+  width: 20px;
+}
+#login #need-help-root .need-help-items {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 8px;
+  position: absolute;
+  width: 221px;
+  height: 94px;
+  left: 82px;
+  top: 392px;
+  background: #FFFFFF;
+  box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+}
+#login #need-help-root .need-help-items .need-help-item {
+  font-size: 16px;
+  height: 39px;
+  display: flex;
+  margin-top: 2px;
+  width: 100%;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 4px;
+  padding: 0 16px;
+}
+#login #need-help-root .need-help-items .need-help-item:hover {
+  background: #F0F0F0;
+}
+#login .ssoPage #the-multi-login-dropdown {
+  top: 263px;
+}
+#login #the-multi-login-dropdown {
+  position: absolute;
+  width: 336px;
+  z-index: 3;
+  background-color: white;
+  padding: 8px;
+  border-radius: 8px;
+  top: 207px;
+  right: 24px;
+  overflow: hidden;
+}
+#login #the-multi-login-dropdown .the-entries {
+  align-self: center;
+  background-color: #fff;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  cursor: pointer;
+  z-index: 999;
+  align-items: center;
+  height: 40px;
+  padding-left: 12px;
+}
+#login #the-multi-login-dropdown .the-entries#add-entry {
+  justify-content: flex-start;
+}
+#login #the-multi-login-dropdown .the-entries#add-entry .add-icon:hover {
+  background: #EBEBEB;
+}
+#login #the-multi-login-dropdown .the-entries#add-entry .add-button {
+  margin-left: 8px;
+}
+#login #the-multi-login-dropdown .the-entries:hover {
+  background: #EBEBEB;
+}
+#login #the-multi-login-dropdown .the-entries .close-icon {
+  text-align: right;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+#login #the-multi-login-dropdown .the-entries .close-icon:hover {
+  background: #EBEBEB;
+}
+#login #the-multi-login-dropdown .the-entries .username {
+  width: 216px;
+  margin-left: 8px;
+}
+#login #the-multi-login-dropdown #the-multi-login-dropdown-user-block::-webkit-scrollbar {
+  width: 11px !important;
+}
+#login #the-multi-login-dropdown #the-multi-login-dropdown-user-block.scroll {
+  overflow: auto;
+  max-height: 300px;
+}
+#login input.full,
+#login div.full {
+  width: calc(100% + 4px);
+}
+#login .login-field {
+  color: white;
+  padding-top: 8px;
+  margin-bottom: 24px;
+  font-size: 15px;
+}
+#login input:not([type=checkbox]):not([type=radio]).rollup {
+  border: 0;
+  height: 0;
+  margin: 0;
+  padding: 0;
+}
+#login input {
+  color: #000;
+  background-color: white;
+  border-radius: 8px;
+  padding: 8px 16px;
+  font-size: 15px;
+  border-width: 0px;
+  height: 40px;
+  /* this is for making the outline appear from design */
+  margin: -2px;
+  border: #191919 2px solid;
+}
+#login input:focus {
+  outline: none;
+}
+#login input::placeholder {
+  color: #565656;
+  opacity: 1;
+}
+#login input:focus-visible {
+  outline: 2px solid #48B6FF !important;
+}
+#login input:-moz-ui-invalid {
+  box-shadow: none;
+}
+#login #email-verification-code #verification-header {
+  text-align: center;
+  font-size: 20px;
+  line-height: 25px;
+  color: white;
+  font-family: "Overpass-SemiBold";
+}
+#login .email-address-input-group {
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  border-radius: 8px;
+  height: 100%;
+}
+#login .email-address-input-group:focus-visible {
+  outline: 2px solid #48B6FF !important;
+}
+#login .email-address-input-group.arrow-showing {
+  /* this is for making the outline appear from design */
+  margin: -2px;
+  border: #191919 2px solid;
+}
+#login .email-address-input-group.arrow-showing .dropdown-button {
+  cursor: pointer;
+}
+#login .email-address-input-group.arrow-showing:focus-visible {
+  outline: 2px solid #48B6FF !important;
+}
+#login .email-address-input-group.arrow-showing input {
+  padding: 8px 0px 8px 16px;
+  border-radius: 8px;
+  border-width: 0px;
+  margin: 0px;
+  height: 40px;
+}
+#login .email-address-input-group.arrow-showing input:focus-visible {
+  outline: 0px solid #48B6FF !important;
+}
+#login .start_sso .inner-border {
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid white;
+  font-weight: 600;
+  font-size: 15px;
+  cursor: pointer;
+  min-width: 209px;
+  width: auto;
+  padding: 0 16px;
+  height: 40px;
+  max-width: 336px;
+  border-radius: 8px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+#login #sso-choice-dropdown {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 8px;
+  position: absolute;
+  width: 276px;
+  height: 136px;
+  left: 53px;
+  bottom: 114px;
+  background: #FFFFFF;
+  box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+  font-family: "Overpass-SemiBold";
+}
+#login #sso-choice-dropdown .desc {
+  color: #565656;
+}
+#login #sso-choice-dropdown .sso-choice-item {
+  padding: 12px 0px 12px 12px;
+  height: 58px;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+}
+#login #sso-choice-dropdown .sso-choice-item:first-child {
+  margin-bottom: 2px;
+}
+#login #sso-choice-dropdown .sso-choice-item .desc {
+  color: #565656;
+}
+#login #sso-choice-dropdown .sso-choice-item .title {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+}
+#login #sso-choice-dropdown .sso-choice-item:hover {
+  background: #F0F0F0;
+}
+#login .region-selector-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 8px;
+  cursor: pointer;
+  color: white;
+  width: 92px;
+  height: 40px;
+  background: #404040;
+  border-radius: 8px !important;
+}
+#login .region-selector-container.govWidth {
+  width: 132px;
+}
+#login .actions {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+}
+#login .actions button.vault,
+#login .actions button.upgrade {
+  flex-grow: 1;
+}
+#login .email-container label, #login label[for=master-password] {
+  color: white;
+  font-size: 14px;
+  display: inline-block;
+  margin-bottom: 3px;
+  opacity: 0.7;
+}
+#login #remember_email {
+  color: white;
+  cursor: pointer;
+}
+#login .account_upsell {
+  color: #FFC700;
+  margin: 20px 0;
+  cursor: pointer;
+}
+#login .email-container-locked {
+  display: block;
+}
+#login select[name=expire_days] {
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+}
+#login #gov-cloud-message {
+  text-align: center;
+  color: white;
+}
+#login #gov-cloud-message #gov-cloud-message-header {
+  margin-top: 16px;
+  font-family: "Overpass-SemiBold";
+}
+#login #gov-cloud-message #gov-cloud-message-body {
+  font-size: 13px;
+  line-height: 19px;
+}
+#login input.has-error, #login .email-address-input-group.has-error {
+  outline: 2px solid #FF7361 !important;
+  border: #191918 2px solid !important;
+  margin: -2px !important;
+}
+#login .error {
+  color: #FF7361;
+  white-space: pre-line;
+  font-size: 14px;
+  font-family: "Overpass";
+  line-height: 18px;
+  width: 100%;
+  position: relative;
+  top: 4px;
+  display: flex;
+}
+#login .error .message {
+  width: 300px;
+  padding-top: 2px;
+  font-size: 14px;
+  line-height: 20px;
+}
+#login .error svg {
+  margin-right: 8px;
+}
+#login .error .login-error-modal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 8px;
+  color: black;
+  font-size: 13px;
+  line-height: 16px;
+  text-align: center;
+  margin-bottom: 16px;
+}
+#login #tfa-below-text {
+  color: #D8D8D8;
+}
+#login #tfa-below-text .tfa-below-text-header {
+  margin-top: 16px;
+  font-family: "Overpass-SemiBold";
+  font-size: 15px;
+}
+#login #tfa-below-text .tfa-below-text-body {
+  font-size: 14px;
+}
+#login #tfa-below-text.row.column {
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+#login #email-verification-code {
+  padding: 0px;
+  color: white;
+}
+#login #email-verification-code #email-verification-code-desc {
+  margin: 0 auto;
+  margin-top: 4px;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+#remember-me-container {
+  display: flex;
+  cursor: pointer;
+  margin: 16px 0;
+  align-items: center;
+}
+#remember-me-container .checkbox {
+  height: 24px;
+  margin-right: 10px;
+}

@@ -1,0 +1,6 @@
+2023/12/11-12:46:11.539 15f8 Creating DB /home/jesse/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_www.onlinebanking.pnc.com_0.indexeddb.leveldb since it was missing.
+2023/12/11-12:46:11.548 15f8 Reusing MANIFEST /home/jesse/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_www.onlinebanking.pnc.com_0.indexeddb.leveldb/MANIFEST-000001
+2023/12/11-12:46:32.205 15f9 Level-0 table #5: started
+2023/12/11-12:46:32.210 15f9 Level-0 table #5: 2713 bytes OK
+2023/12/11-12:46:32.216 15f9 Delete type=0 #3
+2023/12/11-12:46:32.217 15f9 Manual compaction at level-0 from (begin) .. (end); will stop at (end)

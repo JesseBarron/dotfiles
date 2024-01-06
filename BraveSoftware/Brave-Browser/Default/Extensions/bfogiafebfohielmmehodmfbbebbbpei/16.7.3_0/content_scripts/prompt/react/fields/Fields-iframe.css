@@ -1,0 +1,37 @@
+.field {
+  position: relative;
+  display: flex;
+  margin-top: 10px;
+  white-space: pre-wrap;
+  width: 100%;
+  align-items: center;
+  border-bottom: 1px solid #B4B4B5;
+  padding-bottom: 7px;
+  user-select: none;
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.6);
+  line-height: 16px;
+}
+.field .value {
+  max-height: 100px;
+  overflow-wrap: break-word;
+  word-break: break-all;
+  word-wrap: break-word;
+  line-height: 16px;
+  margin-right: 8px;
+  width: 100%;
+  color: #000;
+}
+.field .value.themed-text {
+  font-size: 13px;
+  color: #1B74DA;
+  margin-bottom: -5px;
+  align-items: center;
+}
+.field .value.themed-text svg {
+  bottom: 4px;
+  position: relative;
+}
+.field .label:not(.cvv) {
+  margin-bottom: 2px !important;
+}

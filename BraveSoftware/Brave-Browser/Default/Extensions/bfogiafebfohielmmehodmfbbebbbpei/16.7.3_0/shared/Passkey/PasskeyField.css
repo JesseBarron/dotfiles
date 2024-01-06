@@ -1,0 +1,84 @@
+div.passkey-field {
+  box-sizing: border-box;
+  background: #f0f0f0;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  align-self: stretch;
+  padding: 12px 16px;
+  gap: 8px;
+}
+.dark-mode div.passkey-field {
+  background: #404040;
+}
+div.passkey-field div.passkey-field-primary-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 12px;
+  align-self: stretch;
+}
+div.passkey-field div.passkey-field-primary-row div.passkey-field-title {
+  flex-grow: 1;
+}
+div.passkey-field div.passkey-field-primary-row div.passkey-field-title > div.passkey-field-title-text {
+  font-family: "Overpass-Semibold";
+  font-size: 15px;
+  line-height: 20px;
+}
+div.passkey-field div.passkey-field-primary-row div.passkey-field-title > div.passkey-field-date {
+  font-size: 14px;
+  line-height: 20px;
+  color: #565656;
+}
+.dark-mode div.passkey-field div.passkey-field-primary-row div.passkey-field-title > div.passkey-field-date {
+  color: #B3B3B3;
+}
+div.passkey-field div.passkey-field-primary-row div.passkey-field-button {
+  height: 24px;
+  width: 24px;
+  cursor: pointer;
+  flex-shrink: 0;
+  border-radius: 4px;
+}
+div.passkey-field div.passkey-field-primary-row div.passkey-field-button.expand svg path {
+  fill: black;
+}
+.dark-mode div.passkey-field div.passkey-field-primary-row div.passkey-field-button.expand svg path {
+  fill: white;
+}
+div.passkey-field div.passkey-field-primary-row div.passkey-field-button.edit svg path {
+  fill: #CE021B !important;
+}
+.dark-mode div.passkey-field div.passkey-field-primary-row div.passkey-field-button.edit svg path {
+  fill: #FF7361 !important;
+}
+div.passkey-field div.passkey-field-expanded-rows {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 8px;
+  flex: none;
+  align-self: stretch;
+}
+div.passkey-field div.passkey-field-expanded-rows div.passkey-field-expanded-row {
+  width: 100%;
+}
+div.passkey-field div.passkey-field-expanded-rows div.passkey-field-expanded-row > div {
+  line-height: 20px;
+  color: #565656;
+}
+.dark-mode div.passkey-field div.passkey-field-expanded-rows div.passkey-field-expanded-row > div {
+  color: #B3B3B3;
+}
+div.passkey-field div.passkey-field-expanded-rows div.passkey-field-expanded-row > div:first-child {
+  font-size: 14px;
+}
+div.passkey-field div.passkey-field-expanded-rows div.passkey-field-expanded-row > div:last-child {
+  font-size: 15px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}

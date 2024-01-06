@@ -1,0 +1,26 @@
+#sso {
+  display: flex;
+  flex-direction: column;
+}
+#sso label {
+  color: #d8d8d8;
+}
+#sso input {
+  margin-top: 4px;
+}
+#sso .ssoactions {
+  display: flex;
+  margin-top: 24px;
+  flex-direction: column;
+}
+#sso .region-selector-popup {
+  bottom: 190px;
+}
+
+#cancelSSO {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  margin-bottom: 40px;
+}

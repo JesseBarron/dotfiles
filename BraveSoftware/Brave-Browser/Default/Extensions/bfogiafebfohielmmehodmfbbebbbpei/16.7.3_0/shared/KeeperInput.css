@@ -1,0 +1,155 @@
+textarea.keeper-input, div.keeper-input.keeper-select-usability-password, textarea.keeper-input-password, div.keeper-input-password.keeper-select-usability-password, div.keeper-select-password, div.keeper-select, div.keeper-select-usability {
+  font-size: 13px;
+  font-family: "Overpass";
+  line-height: 24px;
+  color: black;
+  outline: none;
+  background-color: transparent;
+  height: 44px;
+  padding: 0;
+  padding-top: 4px;
+  overflow: hidden;
+  border: none;
+  width: 100%;
+  transition: height 0.3s ease;
+  resize: none;
+  word-wrap: break-word;
+}
+textarea.keeper-input::placeholder, div.keeper-input.keeper-select-usability-password::placeholder, textarea.keeper-input-password::placeholder, div.keeper-input-password.keeper-select-usability-password::placeholder, div.keeper-select-password::placeholder, div.keeper-select::placeholder, div.keeper-select-usability::placeholder {
+  font-size: 15px;
+  letter-spacing: 0px;
+  font-family: "Overpass";
+  color: #565656;
+  opacity: 1;
+}
+textarea.keeper-input-password, div.keeper-input-password.keeper-select-usability-password, div.keeper-select-password {
+  font-family: "PT Mono", monospace !important;
+  font-weight: 400 !important;
+  font-size: 15px !important;
+  line-height: 24px;
+  color: #000;
+}
+textarea.keeper-input.adjust-relative-to-border, div.keeper-input.adjust-relative-to-border.keeper-select-usability-password, textarea.adjust-relative-to-border.keeper-input-password, div.adjust-relative-to-border.keeper-input-password.keeper-select-usability-password, div.adjust-relative-to-border.keeper-select-password, div.keeper-select.adjust-relative-to-border, div.adjust-relative-to-border.keeper-select-usability {
+  padding: 10px 12px !important;
+  line-height: 20px;
+}
+textarea.keeper-input-usability, textarea.keeper-input-usability-password, div.keeper-select-usability-password, div.keeper-input-usability.keeper-select-password, div.keeper-select-password.keeper-input-usability-password, div.keeper-select-usability {
+  font-size: 13px;
+  font-family: "Overpass";
+  line-height: 20px;
+  box-sizing: border-box;
+  color: #000;
+  outline: none;
+  background-color: transparent;
+  height: 24px;
+  overflow: hidden;
+  width: 100%;
+  transition: height 0.3s ease;
+  resize: none;
+  word-wrap: break-word;
+  border: 1px solid #d8d8d8;
+  padding: 8px 12px;
+  border-radius: 8px;
+}
+.record-edit-field-usability.error textarea.keeper-input-usability, .record-edit-field-usability.error textarea.keeper-input-usability-password, .record-edit-field-usability.error div.keeper-select-usability-password, .record-edit-field-usability.error div.keeper-input-usability.keeper-select-password, .record-edit-field-usability.error div.keeper-select-password.keeper-input-usability-password, .record-edit-field-usability.error div.keeper-select-usability {
+  border-color: #B60000;
+}
+textarea.keeper-input-usability-password, div.keeper-input-usability-password.keeper-select-password, div.keeper-select-usability-password {
+  font-family: "PT Mono", monospace !important;
+  font-weight: 400 !important;
+  font-size: 15px !important;
+  line-height: 24px;
+  color: #000;
+}
+
+div.keeper-select, div.keeper-select-usability {
+  cursor: pointer;
+  position: relative;
+}
+div.keeper-select ~ .cancel, div.keeper-select-usability ~ .cancel {
+  position: absolute;
+  cursor: pointer;
+  width: 18px;
+  height: 18px;
+  bottom: 11px;
+  right: 30px;
+}
+div.keeper-select.keeper-select-disabled, div.keeper-select-disabled.keeper-select-usability {
+  border-color: #BFBFBF;
+  opacity: 0.5;
+  cursor: inherit;
+}
+div.keeper-select.keeper-select-disabled ~ div svg path, div.keeper-select-disabled.keeper-select-usability ~ div svg path {
+  fill-opacity: 0.5;
+}
+
+.keeper-select-usability {
+  padding: 8px;
+  height: 40px;
+}
+
+.keeper-select-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+}
+
+.keeper-select-menu {
+  position: absolute;
+  max-height: 300px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  font-size: 14px;
+  font-family: "Overpass";
+  background-color: white;
+  color: black;
+  box-shadow: 2px 2px 7px 0 rgba(0, 0, 0, 0.5);
+  border: 1px solid #F0F0F0;
+  border-radius: 4px;
+  padding: 8px;
+  cursor: pointer;
+}
+.keeper-select-menu .keeper-select-menu-item {
+  padding: 7px 16px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  border-radius: 4px;
+}
+.keeper-select-menu .keeper-select-menu-item .check {
+  height: 24px;
+  width: 24px;
+  margin: 0 8px 0 0;
+  position: absolute;
+  right: -6px;
+}
+.rtl .keeper-select-menu .keeper-select-menu-item .check {
+  margin: 0 0 0 8px;
+  position: absolute;
+  left: -8px;
+}
+.keeper-select-menu .keeper-select-menu-item .menu-item-description .sublabel {
+  color: #565656;
+}
+.keeper-select-menu .keeper-select-menu-item .menu-item-description .menu-desc-label {
+  margin-left: 8px;
+  margin-right: 8px;
+  font-size: 14px;
+  color: #000;
+  padding: 0;
+  align-self: center;
+  flex-grow: 1;
+}
+.keeper-select-menu .keeper-select-menu-item:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.keeper-rtl .keeper-select-menu .keeper-select-menu-item .check {
+  margin: unset;
+  right: unset;
+  left: 6px;
+}

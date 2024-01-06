@@ -1,0 +1,15 @@
+2023/12/22-21:09:54.419 4da Reusing MANIFEST /home/jesse/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_www.youtube.com_0.indexeddb.leveldb/MANIFEST-000001
+2023/12/22-21:09:54.419 4da Recovering log #26
+2023/12/22-21:09:54.422 4da Reusing old log /home/jesse/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_www.youtube.com_0.indexeddb.leveldb/000026.log 
+2023/12/30-19:13:52.248 4b6 Level-0 table #31: started
+2023/12/30-19:13:52.260 4b6 Level-0 table #31: 505566 bytes OK
+2023/12/30-19:13:52.266 4b6 Delete type=0 #26
+2023/12/30-19:13:52.267 4b6 Manual compaction at level-0 from (begin) .. (end); will stop at (end)
+2023/12/30-19:13:52.267 4b6 Manual compaction at level-1 from (begin) .. (end); will stop at '\x00\x0f\x02\x1f\x03\x000z9f\xc9xB\x00\x03\x00\x00\x00\x00\x00\x00G@' @ 22145 : 1
+2023/12/30-19:13:52.267 4b6 Compacting 1@1 + 1@2 files
+2023/12/30-19:13:52.273 4b6 Generated table #32@1: 386 keys, 41564 bytes
+2023/12/30-19:13:52.273 4b6 Compacted 1@1 + 1@2 files => 41564 bytes
+2023/12/30-19:13:52.278 4b6 compacted to: files[ 0 0 1 0 0 0 0 ]
+2023/12/30-19:13:52.279 4b6 Delete type=2 #28
+2023/12/30-19:13:52.279 4b6 Delete type=2 #31
+2023/12/30-19:13:52.279 4b6 Manual compaction at level-1 from '\x00\x0f\x02\x1f\x03\x000z9f\xc9xB\x00\x03\x00\x00\x00\x00\x00\x00G@' @ 22145 : 1 .. (end); will stop at (end)

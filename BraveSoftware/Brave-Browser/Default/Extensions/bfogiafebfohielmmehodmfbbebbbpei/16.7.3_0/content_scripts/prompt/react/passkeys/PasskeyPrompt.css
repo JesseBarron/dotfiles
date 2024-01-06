@@ -1,0 +1,587 @@
+#keeper-extension.passkeyCreate .keeper-header,
+#keeper-extension.passkeyGet .keeper-header {
+  background-image: initial !important;
+  display: flex;
+  align-items: start;
+  padding: 20px !important;
+  gap: 16px;
+  height: auto !important;
+  min-height: 68px !important;
+}
+#keeper-extension.passkeyCreate .keeper-header.bottom-border,
+#keeper-extension.passkeyGet .keeper-header.bottom-border {
+  box-shadow: inset 0px -1px 0px #d8d8d8;
+}
+#keeper-extension.passkeyCreate .keeper-header .passkey-header,
+#keeper-extension.passkeyGet .keeper-header .passkey-header {
+  display: flex;
+  gap: 16px;
+  align-items: start;
+}
+#keeper-extension.passkeyCreate .keeper-header .passkey-header svg,
+#keeper-extension.passkeyGet .keeper-header .passkey-header svg {
+  height: 28px;
+  width: 28px;
+  flex-shrink: 0;
+}
+#keeper-extension.passkeyCreate .keeper-header #passkey-header-title,
+#keeper-extension.passkeyGet .keeper-header #passkey-header-title {
+  font-family: "Overpass-Semibold";
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+}
+#keeper-extension.passkeyCreate .keeper-header .keeper-logo,
+#keeper-extension.passkeyGet .keeper-header .keeper-logo {
+  display: none;
+}
+#keeper-extension.passkeyCreate .keeper-header .keeper-close,
+#keeper-extension.passkeyGet .keeper-header .keeper-close {
+  border-radius: 4px;
+}
+#keeper-extension.passkeyCreate .keeper-header .keeper-close svg path,
+#keeper-extension.passkeyGet .keeper-header .keeper-close svg path {
+  fill: #565656 !important;
+}
+#keeper-extension.passkeyCreate *:focus-visible.focus-visible,
+#keeper-extension.passkeyGet *:focus-visible.focus-visible {
+  outline: 2px solid #054b91;
+  outline-offset: 2px;
+}
+
+#keeper-extension.passkeyCreate.dark-mode,
+#keeper-extension.passkeyGet.dark-mode {
+  background: #262626 !important;
+}
+#keeper-extension.passkeyCreate.dark-mode .keeper-header,
+#keeper-extension.passkeyGet.dark-mode .keeper-header {
+  background: initial !important;
+}
+#keeper-extension.passkeyCreate.dark-mode .keeper-header.bottom-border,
+#keeper-extension.passkeyGet.dark-mode .keeper-header.bottom-border {
+  box-shadow: inset 0px -1px 0px #404040;
+}
+#keeper-extension.passkeyCreate.dark-mode .keeper-header .keeper-close svg path,
+#keeper-extension.passkeyGet.dark-mode .keeper-header .keeper-close svg path {
+  fill: #b3b3b3 !important;
+}
+#keeper-extension.passkeyCreate.dark-mode *:focus-visible.focus-visible,
+#keeper-extension.passkeyGet.dark-mode *:focus-visible.focus-visible {
+  outline-color: #48B6FF;
+}
+
+#keeper-extension.passkeyCreateSuccess,
+#keeper-extension.passkeyGetSuccess {
+  background: black;
+}
+#keeper-extension.passkeyCreateSuccess .passkey-success,
+#keeper-extension.passkeyGetSuccess .passkey-success {
+  display: flex;
+  gap: 12px;
+  padding: 16px;
+  align-items: center;
+}
+#keeper-extension.passkeyCreateSuccess .passkey-success svg,
+#keeper-extension.passkeyGetSuccess .passkey-success svg {
+  flex-shrink: 0;
+}
+#keeper-extension.passkeyCreateSuccess .passkey-success span,
+#keeper-extension.passkeyGetSuccess .passkey-success span {
+  color: white;
+  font-family: "Overpass-Semibold";
+  font-size: 15px;
+  line-height: 24px;
+  flex-grow: 1;
+}
+#keeper-extension.passkeyCreateSuccess .passkey-success .keeper-close,
+#keeper-extension.passkeyGetSuccess .passkey-success .keeper-close {
+  border-radius: 4px;
+}
+#keeper-extension.passkeyCreateSuccess .passkey-success .keeper-close svg path,
+#keeper-extension.passkeyGetSuccess .passkey-success .keeper-close svg path {
+  fill: white !important;
+}
+#keeper-extension.passkeyCreateSuccess *:focus-visible.focus-visible,
+#keeper-extension.passkeyGetSuccess *:focus-visible.focus-visible {
+  outline: 2px solid #48B6FF;
+}
+
+.passkey-prompt-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px 20px 20px;
+  gap: 20px;
+}
+
+.passkey-record-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 12px;
+  gap: 10px;
+  height: 40px;
+  align-self: stretch;
+  border: 1px solid #d8d8d8;
+  border-radius: 8px;
+}
+.dark-mode .passkey-record-item {
+  border: 1px solid #404040;
+}
+.passkey-record-item.shadow {
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15);
+}
+.dark-mode .passkey-record-item.shadow {
+  background: #333333;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.5);
+}
+.passkey-record-item div[role=button] {
+  cursor: pointer;
+  height: 24px;
+  width: 24px;
+}
+.passkey-record-item div.edit {
+  border-radius: 4px;
+}
+.passkey-record-item div.edit svg path {
+  fill: black;
+}
+.dark-mode .passkey-record-item div.edit svg path {
+  fill: white;
+}
+.passkey-record-item svg {
+  flex-shrink: 0;
+}
+
+.passkey-record-item-info {
+  flex-grow: 1;
+  max-width: 226px;
+}
+.passkey-record-item-info div.passkey-info-title {
+  font-size: 16px;
+  font-family: "Overpass-Semibold";
+  line-height: 20px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.passkey-record-item-info div.passkey-info-username {
+  display: flex;
+  gap: 4px;
+  font-size: 14px;
+  line-height: 20px;
+  color: #565656;
+}
+.dark-mode .passkey-record-item-info div.passkey-info-username {
+  color: #b3b3b3;
+}
+.passkey-record-item-info div.passkey-info-username span {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.passkey-record-item-info div.passkey-info-username svg {
+  flex-shrink: 0;
+}
+.passkey-record-item-info div.passkey-info-username svg path {
+  fill: #565656;
+}
+.dark-mode .passkey-record-item-info div.passkey-info-username svg path {
+  fill: #b3b3b3;
+}
+
+.passkey-record-editor {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  align-self: stretch;
+  gap: 24px;
+  max-height: 376px;
+  overflow-y: auto;
+  padding: 4px;
+  margin: -4px;
+}
+.passkey-record-editor input,
+.passkey-record-editor textarea {
+  box-sizing: border-box;
+  padding: 8px 16px;
+  border-radius: 8px;
+  border: 1px solid #d8d8d8;
+  font-family: "Overpass";
+  font-size: 15px;
+  flex-grow: 1;
+  resize: none;
+}
+.passkey-record-editor input::placeholder,
+.passkey-record-editor textarea::placeholder {
+  color: #565656;
+  opacity: 1;
+}
+.dark-mode .passkey-record-editor input::placeholder,
+.dark-mode .passkey-record-editor textarea::placeholder {
+  color: #b3b3b3;
+}
+.dark-mode .passkey-record-editor input,
+.dark-mode .passkey-record-editor textarea {
+  border: 1px solid #565656;
+  color: white;
+  background: #262626;
+}
+
+.passkey-record-editor-title {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  padding: 0px;
+  gap: 8px;
+  align-self: stretch;
+}
+.passkey-record-editor-title input {
+  font-family: "Overpass-Semibold";
+  font-size: 17px;
+  line-height: 24px;
+  height: 40px;
+}
+
+.passkey-record-editor-passkey {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  align-self: stretch;
+  margin-top: -8px;
+}
+
+.passkey-record-editor-notes {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 4px;
+  align-self: stretch;
+}
+.passkey-record-editor-notes label {
+  font-size: 14px;
+  line-height: 20px;
+  color: #565656;
+}
+.dark-mode .passkey-record-editor-notes label {
+  color: #b3b3b3;
+}
+.passkey-record-editor-notes textarea {
+  align-self: stretch;
+  line-height: 19px;
+  height: 39px;
+}
+
+.passkey-choices {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.passkey-choices .passkey-choices-list-container {
+  padding: 0px 20px;
+  align-self: stretch;
+}
+.passkey-choices .passkey-prompt-buttons {
+  padding: 20px;
+}
+.passkey-choices .passkey-prompt-buttons.top-border {
+  box-shadow: inset 0px 1px 0px #d8d8d8;
+}
+.dark-mode .passkey-choices .passkey-prompt-buttons.top-border {
+  box-shadow: inset 0px 1px 0px #404040;
+}
+.passkey-choices .passkey-choices-list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+  max-height: 332px;
+  overflow-y: auto;
+  align-self: stretch;
+  overscroll-behavior-y: none;
+  padding: 4px 12px;
+  margin: -4px -12px;
+  scrollbar-color: rgba(0, 0, 0, 0.5) transparent;
+}
+@supports (overflow-y: overlay) {
+  .passkey-choices .passkey-choices-list {
+    overflow-y: overlay;
+  }
+}
+.passkey-choices .passkey-choices-list.top-is-clipped {
+  padding-top: 0;
+  margin-top: 0;
+}
+.passkey-choices .passkey-choices-list.bottom-is-clipped {
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+.passkey-choices .passkey-choices-list::-webkit-scrollbar {
+  width: 8px !important;
+}
+.passkey-choices .passkey-choices-list::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.5) !important;
+  border: none !important;
+}
+.dark-mode .passkey-choices .passkey-choices-list::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.5) !important;
+}
+.windows .passkey-choices .passkey-choices-list {
+  scrollbar-width: thin;
+}
+.dark-mode .passkey-choices .passkey-choices-list {
+  scrollbar-color: rgba(0, 0, 0, 0.5) transparent;
+}
+.passkey-choices .passkey-choices-item {
+  border-radius: 8px;
+  align-self: stretch;
+  cursor: pointer;
+}
+.passkey-choices .passkey-choices-item .passkey-record-item {
+  box-shadow: initial;
+}
+.passkey-choices .passkey-choices-item .passkey-record-item:hover {
+  background: #f0f0f0;
+}
+.dark-mode .passkey-choices .passkey-choices-item .passkey-record-item:hover {
+  background: #404040;
+}
+.passkey-choices .passkey-choices-item-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 12px;
+  height: 44px;
+}
+.passkey-choices .passkey-choices-item-icon {
+  background: #ffffff;
+}
+.passkey-choices .passkey-choices-item-icon > svg path {
+  fill: #1b74da;
+}
+.passkey-choices .passkey-choices-item-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  flex: none;
+  flex-grow: 1;
+}
+.passkey-choices .passkey-choices-item-info > div:first-child {
+  height: 24px;
+  font-family: "Overpass-Semibold";
+  font-size: 15px;
+  line-height: 24px;
+}
+.passkey-choices .passkey-choices-item-info > div:last-child {
+  height: 20px;
+  font-size: 14px;
+  line-height: 20px;
+  color: #565656;
+  mix-blend-mode: normal;
+}
+
+.login-svg-container {
+  box-sizing: border-box;
+  position: relative;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #d8d8d8;
+  border-radius: 8px;
+  background: #ffffff;
+  flex-shrink: 0;
+}
+.login-svg-container > svg {
+  position: absolute;
+  left: 20%;
+  right: 20%;
+  top: 20%;
+  bottom: 20%;
+}
+
+.passkey-prompt-buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-self: stretch;
+  gap: 12px;
+}
+.passkey-prompt-buttons button {
+  border-radius: 8px;
+  font-size: 15px;
+  line-height: 24px;
+  border: none;
+  cursor: pointer;
+}
+.passkey-prompt-buttons button:first-child {
+  font-family: "Overpass-Semibold";
+  background: #ffc700;
+  padding: 2px 16px;
+  height: 44px;
+}
+.passkey-prompt-buttons button:first-child:hover {
+  background: #E6B300;
+}
+.passkey-prompt-buttons button:nth-child(2) {
+  font-family: "Overpass";
+  height: 32px;
+  padding: 4px 8px;
+  color: #1b74da;
+  background: transparent;
+}
+.dark-mode .passkey-prompt-buttons button:nth-child(2) {
+  color: #48b6ff !important;
+}
+
+.passkey-record-select {
+  align-self: stretch;
+}
+.passkey-record-select .passkey-record-select-control {
+  height: 40px;
+  border: none;
+  border-radius: 8px;
+  background: #f0f0f0;
+  align-self: stretch;
+  font-family: "Overpass-Semibold";
+  font-size: 15px;
+  cursor: pointer;
+}
+.passkey-record-select .passkey-record-select-control:focus-within:not(.isOpen) {
+  outline: 2px solid #054b91 !important;
+  outline-offset: 2px;
+}
+.dark-mode .passkey-record-select .passkey-record-select-control:focus-within:not(.isOpen) {
+  outline-color: #48B6FF !important;
+}
+.dark-mode .passkey-record-select .passkey-record-select-control {
+  background: #404040;
+}
+.passkey-record-select .passkey-record-select-value-container {
+  padding: 0 16px;
+}
+.passkey-record-select .passkey-record-select-indicators-container {
+  padding: 8px;
+}
+.passkey-record-select .passkey-record-select-indicators-container path {
+  fill: black;
+}
+.dark-mode .passkey-record-select .passkey-record-select-indicators-container path {
+  fill: white;
+}
+.passkey-record-select .passkey-record-select-menu {
+  background: #ffffff;
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+  margin-top: 4px;
+  cursor: pointer;
+  padding: 8px;
+}
+.dark-mode .passkey-record-select .passkey-record-select-menu {
+  background: #262626;
+}
+.passkey-record-select .passkey-record-select-menu .passkey-record-select-menu-list {
+  overscroll-behavior-y: none;
+  padding: 5px;
+  margin: -5px;
+  scrollbar-color: transparent transparent;
+}
+@supports (overflow-y: overlay) {
+  .passkey-record-select .passkey-record-select-menu .passkey-record-select-menu-list {
+    overflow-y: overlay;
+  }
+}
+.passkey-record-select .passkey-record-select-menu .passkey-record-select-menu-list::-webkit-scrollbar {
+  width: 8px !important;
+}
+.passkey-record-select .passkey-record-select-menu .passkey-record-select-menu-list::-webkit-scrollbar-thumb {
+  background-color: transparent !important;
+  border: none !important;
+}
+.windows .passkey-record-select .passkey-record-select-menu .passkey-record-select-menu-list {
+  scrollbar-width: thin;
+}
+.passkey-record-select .passkey-record-select-menu .passkey-record-select-menu-list:hover, .passkey-record-select .passkey-record-select-menu .passkey-record-select-menu-list.isScrolling {
+  scrollbar-color: rgba(0, 0, 0, 0.5) transparent;
+}
+.passkey-record-select .passkey-record-select-menu .passkey-record-select-menu-list:hover::-webkit-scrollbar-thumb, .passkey-record-select .passkey-record-select-menu .passkey-record-select-menu-list.isScrolling::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.5) !important;
+}
+.dark-mode .passkey-record-select .passkey-record-select-menu .passkey-record-select-menu-list:hover::-webkit-scrollbar-thumb, .dark-mode .passkey-record-select .passkey-record-select-menu .passkey-record-select-menu-list.isScrolling::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.5) !important;
+}
+.dark-mode .passkey-record-select .passkey-record-select-menu .passkey-record-select-menu-list:hover, .dark-mode .passkey-record-select .passkey-record-select-menu .passkey-record-select-menu-list.isScrolling {
+  scrollbar-color: rgba(0, 0, 0, 0.5) transparent;
+}
+.passkey-record-select .passkey-record-select-menu .passkey-record-select-group-divider {
+  padding: 8px;
+}
+.passkey-record-select .passkey-record-select-menu .passkey-record-select-group-divider > div {
+  height: 1px;
+  background: #d8d8d8;
+}
+.dark-mode .passkey-record-select .passkey-record-select-menu .passkey-record-select-group-divider > div {
+  background: #565656;
+}
+.passkey-record-select .passkey-record-select-menu .passkey-record-select-option:hover {
+  background: #f0f0f0;
+}
+.dark-mode .passkey-record-select .passkey-record-select-menu .passkey-record-select-option:hover {
+  background: #404040;
+}
+.passkey-record-select .passkey-record-select-menu .passkey-record-select-option.focused {
+  outline: 2px solid #054b91;
+  outline-offset: 2px;
+}
+.dark-mode .passkey-record-select .passkey-record-select-menu .passkey-record-select-option.focused {
+  outline-color: #48b6ff;
+}
+.passkey-record-select .passkey-record-select-menu .passkey-record-select-option svg.check {
+  flex-shrink: 0;
+}
+.passkey-record-select .passkey-record-select-menu .passkey-record-select-option svg.check path {
+  fill: black;
+}
+.dark-mode .passkey-record-select .passkey-record-select-menu .passkey-record-select-option svg.check path {
+  fill: white;
+}
+.passkey-record-select .passkey-record-select-menu .passkey-record-select-option.create-new-record {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  gap: 8px;
+  height: 40px;
+  border-radius: 8px;
+}
+.passkey-record-select .passkey-record-select-menu .passkey-record-select-option.create-new-record svg.add-circle {
+  flex-shrink: 0;
+}
+.passkey-record-select .passkey-record-select-menu .passkey-record-select-option.create-new-record svg.add-circle path {
+  fill: #1b74da;
+}
+.dark-mode .passkey-record-select .passkey-record-select-menu .passkey-record-select-option.create-new-record svg.add-circle path {
+  fill: #48b6ff;
+}
+.passkey-record-select .passkey-record-select-menu .passkey-record-select-option.create-new-record span {
+  font-size: 14px;
+  height: 20px;
+  line-height: 20px;
+  color: #1b74da;
+  flex-grow: 1;
+}
+.dark-mode .passkey-record-select .passkey-record-select-menu .passkey-record-select-option.create-new-record span {
+  color: #48b6ff;
+}
+.passkey-record-select .passkey-record-select-menu .passkey-record-item {
+  border: none;
+  padding: 8px;
+}
+.passkey-record-select .passkey-record-select-menu .passkey-record-item .passkey-info-title {
+  font-size: 15px;
+}
+
+div.passkey-error {
+  font-size: 15px;
+  line-height: 24px;
+}

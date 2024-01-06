@@ -1,0 +1,14 @@
+2024-01-01T03:59:12.540Z 0: 
+
+----------------------------------------------
+2024-01-01T03:59:12.556Z 1: Discord starting: {"releaseChannel":"stable","version":"0.0.39"}, modulepath: /home/jesse/.config/discord/0.0.39/modules
+2024-01-01T03:59:12.560Z 2: ✅ webContents.created web1 ""
+2024-01-01T03:59:12.564Z 3: ✅ window.created win1 "discord"
+2024-01-01T03:59:12.741Z 4: ✅ webContents.did-finish-load web1
+2024-01-01T03:59:19.268Z 5: ✅ webContents.created web2 ""
+2024-01-01T03:59:19.279Z 6: ✅ window.created win2 "Discord"
+2024-01-01T03:59:27.252Z 7: ✅ webContents.did-finish-load web2
+2024-01-01T03:59:27.347Z 8: window.close win1
+2024-01-01T03:59:27.371Z 9: webContents.destroyed web1
+2024-01-01T03:59:27.375Z 10: window.closed win1
+2024-01-01T23:01:12.560Z 11: window.close win2

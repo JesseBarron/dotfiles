@@ -1,0 +1,15 @@
+2024/01/03-21:04:05.442 4a9 Reusing MANIFEST /home/jesse/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_trello.com_0.indexeddb.leveldb/MANIFEST-000001
+2024/01/03-21:04:05.442 4a9 Recovering log #34
+2024/01/03-21:04:05.446 4a9 Reusing old log /home/jesse/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_trello.com_0.indexeddb.leveldb/000034.log 
+2024/01/03-21:08:37.997 4aa Level-0 table #39: started
+2024/01/03-21:08:38.034 4aa Level-0 table #39: 1751520 bytes OK
+2024/01/03-21:08:38.041 4aa Delete type=0 #34
+2024/01/03-21:08:38.042 4aa Manual compaction at level-0 from (begin) .. (end); will stop at (end)
+2024/01/03-21:08:38.042 4aa Manual compaction at level-1 from (begin) .. (end); will stop at '\x00\x01\x01"\x04\x02\x01\x06\x00t\x00r\x00e\x00l\x00l\x00o\x03\x00\xa00\x1b'\xcdxB\x00\x01$\x00b\x003\x00a\x001\x006\x006\x004\x00d\x00-\x003\x008\x004\x008\x00-\x004\x00b\x000\x007\x00-\x00b\x009\x000\x000\x00-\x006\x009\x009\x002\x003\x002\x00b\x000\x007\x00d\x005\x00e' @ 189639 : 1
+2024/01/03-21:08:38.042 4aa Compacting 1@1 + 1@2 files
+2024/01/03-21:08:38.061 4aa Generated table #40@1: 9435 keys, 669382 bytes
+2024/01/03-21:08:38.061 4aa Compacted 1@1 + 1@2 files => 669382 bytes
+2024/01/03-21:08:38.067 4aa compacted to: files[ 0 0 1 0 0 0 0 ]
+2024/01/03-21:08:38.067 4aa Delete type=2 #36
+2024/01/03-21:08:38.067 4aa Delete type=2 #39
+2024/01/03-21:08:38.067 4aa Manual compaction at level-1 from '\x00\x01\x01"\x04\x02\x01\x06\x00t\x00r\x00e\x00l\x00l\x00o\x03\x00\xa00\x1b'\xcdxB\x00\x01$\x00b\x003\x00a\x001\x006\x006\x004\x00d\x00-\x003\x008\x004\x008\x00-\x004\x00b\x000\x007\x00-\x00b\x009\x000\x000\x00-\x006\x009\x009\x002\x003\x002\x00b\x000\x007\x00d\x005\x00e' @ 189639 : 1 .. (end); will stop at (end)

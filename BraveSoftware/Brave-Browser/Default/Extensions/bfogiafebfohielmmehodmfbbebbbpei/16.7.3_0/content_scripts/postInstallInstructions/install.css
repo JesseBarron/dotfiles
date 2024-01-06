@@ -1,0 +1,93 @@
+@font-face {
+    font-family: 'Overpass';
+    font-style: normal;
+
+    src: local('Overpass Regular'), local('Overpass'),
+        url("overpass-v4-latin-ext_latin-700.woff") format('woff');
+    /* Modern Browsers */
+}
+
+html {
+    background: var(--gradient-blue, radial-gradient(138.46% 138.89% at 1.25% 96.18%, #1B78E0 0%, #004899 100%));
+
+    color: #FFF;
+    text-align: center;
+    height: 100%;
+}
+
+body {
+    margin: 0;
+}
+
+.hidden {
+    display: none;
+}
+
+.mock-head {
+    margin-bottom: 72px;
+    background: #000;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.50);
+    display: flex;
+    padding: 16px 95px;
+}
+
+.title {
+    display: contents;
+    font-size: 36px;
+    height: 55px;
+    font-family: 'Overpass';
+    font-weight: 700;
+    display: inline;
+}
+
+.subtitle {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 56px;
+    height: 37px;
+    font-family: 'Overpass';
+}
+
+.browser-selected {
+    padding: 0 24px;
+}
+
+.browser-selector {
+    display: flex;
+    padding: 64px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.browser {
+    padding: 16px;
+    margin-right: 16px;
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+    background-color: #0B4486;
+    border-radius: 8px;
+    margin-bottom: 16px;
+}
+
+.browser-title {
+    color: #FFF;
+    text-align: center;
+    font-family: 'Overpass';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px; 
+    margin-top: 8px;
+}
+
+svg.title-icon-one,
+svg.title-icon-two {
+    position: relative;
+    top: 3px;
+    padding: 0 8px;
+}
+
+.animation {
+    height: 348px;
+}

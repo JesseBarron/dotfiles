@@ -1,0 +1,441 @@
+.disclaimer-overlay,
+.announcement-overlay,
+.alert-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0px;
+  top: 0px;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.disclaimer-modal,
+.warning-modal,
+.announcement-modal,
+.alert-modal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 24px;
+  gap: 16px;
+  position: absolute;
+  width: 352px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #ffffff;
+  box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+}
+.disclaimer-modal .warning-icon svg path,
+.warning-modal .warning-icon svg path,
+.announcement-modal .warning-icon svg path,
+.alert-modal .warning-icon svg path {
+  fill: #CE021B;
+}
+.disclaimer-modal .disclaimer-icon, .disclaimer-modal .alert-icon, .disclaimer-modal .warning-icon,
+.warning-modal .disclaimer-icon,
+.warning-modal .alert-icon,
+.warning-modal .warning-icon,
+.announcement-modal .disclaimer-icon,
+.announcement-modal .alert-icon,
+.announcement-modal .warning-icon,
+.alert-modal .disclaimer-icon,
+.alert-modal .alert-icon,
+.alert-modal .warning-icon {
+  height: 32px;
+}
+.disclaimer-modal .disclaimer-text,
+.disclaimer-modal .warning-text,
+.disclaimer-modal .announcement-text,
+.disclaimer-modal .alert-text,
+.warning-modal .disclaimer-text,
+.warning-modal .warning-text,
+.warning-modal .announcement-text,
+.warning-modal .alert-text,
+.announcement-modal .disclaimer-text,
+.announcement-modal .warning-text,
+.announcement-modal .announcement-text,
+.announcement-modal .alert-text,
+.alert-modal .disclaimer-text,
+.alert-modal .warning-text,
+.alert-modal .announcement-text,
+.alert-modal .alert-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+.disclaimer-modal .disclaimer-text #warning-title,
+.disclaimer-modal .warning-text #warning-title,
+.disclaimer-modal .announcement-text #warning-title,
+.disclaimer-modal .alert-text #warning-title,
+.warning-modal .disclaimer-text #warning-title,
+.warning-modal .warning-text #warning-title,
+.warning-modal .announcement-text #warning-title,
+.warning-modal .alert-text #warning-title,
+.announcement-modal .disclaimer-text #warning-title,
+.announcement-modal .warning-text #warning-title,
+.announcement-modal .announcement-text #warning-title,
+.announcement-modal .alert-text #warning-title,
+.alert-modal .disclaimer-text #warning-title,
+.alert-modal .warning-text #warning-title,
+.alert-modal .announcement-text #warning-title,
+.alert-modal .alert-text #warning-title {
+  margin-bottom: -2px;
+}
+.disclaimer-modal .disclaimer-text #disclaimer-title,
+.disclaimer-modal .disclaimer-text #warning-title,
+.disclaimer-modal .disclaimer-text #announcement-title,
+.disclaimer-modal .disclaimer-text #alert-title,
+.disclaimer-modal .warning-text #disclaimer-title,
+.disclaimer-modal .warning-text #warning-title,
+.disclaimer-modal .warning-text #announcement-title,
+.disclaimer-modal .warning-text #alert-title,
+.disclaimer-modal .announcement-text #disclaimer-title,
+.disclaimer-modal .announcement-text #warning-title,
+.disclaimer-modal .announcement-text #announcement-title,
+.disclaimer-modal .announcement-text #alert-title,
+.disclaimer-modal .alert-text #disclaimer-title,
+.disclaimer-modal .alert-text #warning-title,
+.disclaimer-modal .alert-text #announcement-title,
+.disclaimer-modal .alert-text #alert-title,
+.warning-modal .disclaimer-text #disclaimer-title,
+.warning-modal .disclaimer-text #warning-title,
+.warning-modal .disclaimer-text #announcement-title,
+.warning-modal .disclaimer-text #alert-title,
+.warning-modal .warning-text #disclaimer-title,
+.warning-modal .warning-text #warning-title,
+.warning-modal .warning-text #announcement-title,
+.warning-modal .warning-text #alert-title,
+.warning-modal .announcement-text #disclaimer-title,
+.warning-modal .announcement-text #warning-title,
+.warning-modal .announcement-text #announcement-title,
+.warning-modal .announcement-text #alert-title,
+.warning-modal .alert-text #disclaimer-title,
+.warning-modal .alert-text #warning-title,
+.warning-modal .alert-text #announcement-title,
+.warning-modal .alert-text #alert-title,
+.announcement-modal .disclaimer-text #disclaimer-title,
+.announcement-modal .disclaimer-text #warning-title,
+.announcement-modal .disclaimer-text #announcement-title,
+.announcement-modal .disclaimer-text #alert-title,
+.announcement-modal .warning-text #disclaimer-title,
+.announcement-modal .warning-text #warning-title,
+.announcement-modal .warning-text #announcement-title,
+.announcement-modal .warning-text #alert-title,
+.announcement-modal .announcement-text #disclaimer-title,
+.announcement-modal .announcement-text #warning-title,
+.announcement-modal .announcement-text #announcement-title,
+.announcement-modal .announcement-text #alert-title,
+.announcement-modal .alert-text #disclaimer-title,
+.announcement-modal .alert-text #warning-title,
+.announcement-modal .alert-text #announcement-title,
+.announcement-modal .alert-text #alert-title,
+.alert-modal .disclaimer-text #disclaimer-title,
+.alert-modal .disclaimer-text #warning-title,
+.alert-modal .disclaimer-text #announcement-title,
+.alert-modal .disclaimer-text #alert-title,
+.alert-modal .warning-text #disclaimer-title,
+.alert-modal .warning-text #warning-title,
+.alert-modal .warning-text #announcement-title,
+.alert-modal .warning-text #alert-title,
+.alert-modal .announcement-text #disclaimer-title,
+.alert-modal .announcement-text #warning-title,
+.alert-modal .announcement-text #announcement-title,
+.alert-modal .announcement-text #alert-title,
+.alert-modal .alert-text #disclaimer-title,
+.alert-modal .alert-text #warning-title,
+.alert-modal .alert-text #announcement-title,
+.alert-modal .alert-text #alert-title {
+  font-family: "Overpass-Semibold";
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+}
+.disclaimer-modal .disclaimer-text #warning-desc,
+.disclaimer-modal .warning-text #warning-desc,
+.disclaimer-modal .announcement-text #warning-desc,
+.disclaimer-modal .alert-text #warning-desc,
+.warning-modal .disclaimer-text #warning-desc,
+.warning-modal .warning-text #warning-desc,
+.warning-modal .announcement-text #warning-desc,
+.warning-modal .alert-text #warning-desc,
+.announcement-modal .disclaimer-text #warning-desc,
+.announcement-modal .warning-text #warning-desc,
+.announcement-modal .announcement-text #warning-desc,
+.announcement-modal .alert-text #warning-desc,
+.alert-modal .disclaimer-text #warning-desc,
+.alert-modal .warning-text #warning-desc,
+.alert-modal .announcement-text #warning-desc,
+.alert-modal .alert-text #warning-desc {
+  color: #565656;
+  margin-bottom: 8px;
+}
+.disclaimer-modal .disclaimer-text #disclaimer-desc,
+.disclaimer-modal .disclaimer-text #warning-desc,
+.disclaimer-modal .disclaimer-text #announcement-desc,
+.disclaimer-modal .disclaimer-text #alert-desc,
+.disclaimer-modal .warning-text #disclaimer-desc,
+.disclaimer-modal .warning-text #warning-desc,
+.disclaimer-modal .warning-text #announcement-desc,
+.disclaimer-modal .warning-text #alert-desc,
+.disclaimer-modal .announcement-text #disclaimer-desc,
+.disclaimer-modal .announcement-text #warning-desc,
+.disclaimer-modal .announcement-text #announcement-desc,
+.disclaimer-modal .announcement-text #alert-desc,
+.disclaimer-modal .alert-text #disclaimer-desc,
+.disclaimer-modal .alert-text #warning-desc,
+.disclaimer-modal .alert-text #announcement-desc,
+.disclaimer-modal .alert-text #alert-desc,
+.warning-modal .disclaimer-text #disclaimer-desc,
+.warning-modal .disclaimer-text #warning-desc,
+.warning-modal .disclaimer-text #announcement-desc,
+.warning-modal .disclaimer-text #alert-desc,
+.warning-modal .warning-text #disclaimer-desc,
+.warning-modal .warning-text #warning-desc,
+.warning-modal .warning-text #announcement-desc,
+.warning-modal .warning-text #alert-desc,
+.warning-modal .announcement-text #disclaimer-desc,
+.warning-modal .announcement-text #warning-desc,
+.warning-modal .announcement-text #announcement-desc,
+.warning-modal .announcement-text #alert-desc,
+.warning-modal .alert-text #disclaimer-desc,
+.warning-modal .alert-text #warning-desc,
+.warning-modal .alert-text #announcement-desc,
+.warning-modal .alert-text #alert-desc,
+.announcement-modal .disclaimer-text #disclaimer-desc,
+.announcement-modal .disclaimer-text #warning-desc,
+.announcement-modal .disclaimer-text #announcement-desc,
+.announcement-modal .disclaimer-text #alert-desc,
+.announcement-modal .warning-text #disclaimer-desc,
+.announcement-modal .warning-text #warning-desc,
+.announcement-modal .warning-text #announcement-desc,
+.announcement-modal .warning-text #alert-desc,
+.announcement-modal .announcement-text #disclaimer-desc,
+.announcement-modal .announcement-text #warning-desc,
+.announcement-modal .announcement-text #announcement-desc,
+.announcement-modal .announcement-text #alert-desc,
+.announcement-modal .alert-text #disclaimer-desc,
+.announcement-modal .alert-text #warning-desc,
+.announcement-modal .alert-text #announcement-desc,
+.announcement-modal .alert-text #alert-desc,
+.alert-modal .disclaimer-text #disclaimer-desc,
+.alert-modal .disclaimer-text #warning-desc,
+.alert-modal .disclaimer-text #announcement-desc,
+.alert-modal .disclaimer-text #alert-desc,
+.alert-modal .warning-text #disclaimer-desc,
+.alert-modal .warning-text #warning-desc,
+.alert-modal .warning-text #announcement-desc,
+.alert-modal .warning-text #alert-desc,
+.alert-modal .announcement-text #disclaimer-desc,
+.alert-modal .announcement-text #warning-desc,
+.alert-modal .announcement-text #announcement-desc,
+.alert-modal .announcement-text #alert-desc,
+.alert-modal .alert-text #disclaimer-desc,
+.alert-modal .alert-text #warning-desc,
+.alert-modal .alert-text #announcement-desc,
+.alert-modal .alert-text #alert-desc {
+  font-size: 15px;
+  line-height: 24px;
+  text-align: center;
+}
+.disclaimer-modal button#warning-primary,
+.warning-modal button#warning-primary,
+.announcement-modal button#warning-primary,
+.alert-modal button#warning-primary {
+  background-color: #CE021B !important;
+  color: white;
+  cursor: pointer;
+}
+.disclaimer-modal .disclaimer-buttons,
+.disclaimer-modal .warning-buttons,
+.disclaimer-modal .announcement-buttons,
+.disclaimer-modal .alert-buttons,
+.warning-modal .disclaimer-buttons,
+.warning-modal .warning-buttons,
+.warning-modal .announcement-buttons,
+.warning-modal .alert-buttons,
+.announcement-modal .disclaimer-buttons,
+.announcement-modal .warning-buttons,
+.announcement-modal .announcement-buttons,
+.announcement-modal .alert-buttons,
+.alert-modal .disclaimer-buttons,
+.alert-modal .warning-buttons,
+.alert-modal .announcement-buttons,
+.alert-modal .alert-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-self: stretch;
+}
+.disclaimer-modal .disclaimer-buttons button,
+.disclaimer-modal .warning-buttons button,
+.disclaimer-modal .announcement-buttons button,
+.disclaimer-modal .alert-buttons button,
+.warning-modal .disclaimer-buttons button,
+.warning-modal .warning-buttons button,
+.warning-modal .announcement-buttons button,
+.warning-modal .alert-buttons button,
+.announcement-modal .disclaimer-buttons button,
+.announcement-modal .warning-buttons button,
+.announcement-modal .announcement-buttons button,
+.announcement-modal .alert-buttons button,
+.alert-modal .disclaimer-buttons button,
+.alert-modal .warning-buttons button,
+.alert-modal .announcement-buttons button,
+.alert-modal .alert-buttons button {
+  font-family: "Overpass";
+  font-size: 15px;
+  line-height: 24px;
+  border: none;
+}
+.disclaimer-modal .disclaimer-buttons button#disclaimer-primary,
+.disclaimer-modal .disclaimer-buttons button#warning-primary,
+.disclaimer-modal .disclaimer-buttons button#announcement-primary,
+.disclaimer-modal .disclaimer-buttons button#alert-primary,
+.disclaimer-modal .warning-buttons button#disclaimer-primary,
+.disclaimer-modal .warning-buttons button#warning-primary,
+.disclaimer-modal .warning-buttons button#announcement-primary,
+.disclaimer-modal .warning-buttons button#alert-primary,
+.disclaimer-modal .announcement-buttons button#disclaimer-primary,
+.disclaimer-modal .announcement-buttons button#warning-primary,
+.disclaimer-modal .announcement-buttons button#announcement-primary,
+.disclaimer-modal .announcement-buttons button#alert-primary,
+.disclaimer-modal .alert-buttons button#disclaimer-primary,
+.disclaimer-modal .alert-buttons button#warning-primary,
+.disclaimer-modal .alert-buttons button#announcement-primary,
+.disclaimer-modal .alert-buttons button#alert-primary,
+.warning-modal .disclaimer-buttons button#disclaimer-primary,
+.warning-modal .disclaimer-buttons button#warning-primary,
+.warning-modal .disclaimer-buttons button#announcement-primary,
+.warning-modal .disclaimer-buttons button#alert-primary,
+.warning-modal .warning-buttons button#disclaimer-primary,
+.warning-modal .warning-buttons button#warning-primary,
+.warning-modal .warning-buttons button#announcement-primary,
+.warning-modal .warning-buttons button#alert-primary,
+.warning-modal .announcement-buttons button#disclaimer-primary,
+.warning-modal .announcement-buttons button#warning-primary,
+.warning-modal .announcement-buttons button#announcement-primary,
+.warning-modal .announcement-buttons button#alert-primary,
+.warning-modal .alert-buttons button#disclaimer-primary,
+.warning-modal .alert-buttons button#warning-primary,
+.warning-modal .alert-buttons button#announcement-primary,
+.warning-modal .alert-buttons button#alert-primary,
+.announcement-modal .disclaimer-buttons button#disclaimer-primary,
+.announcement-modal .disclaimer-buttons button#warning-primary,
+.announcement-modal .disclaimer-buttons button#announcement-primary,
+.announcement-modal .disclaimer-buttons button#alert-primary,
+.announcement-modal .warning-buttons button#disclaimer-primary,
+.announcement-modal .warning-buttons button#warning-primary,
+.announcement-modal .warning-buttons button#announcement-primary,
+.announcement-modal .warning-buttons button#alert-primary,
+.announcement-modal .announcement-buttons button#disclaimer-primary,
+.announcement-modal .announcement-buttons button#warning-primary,
+.announcement-modal .announcement-buttons button#announcement-primary,
+.announcement-modal .announcement-buttons button#alert-primary,
+.announcement-modal .alert-buttons button#disclaimer-primary,
+.announcement-modal .alert-buttons button#warning-primary,
+.announcement-modal .alert-buttons button#announcement-primary,
+.announcement-modal .alert-buttons button#alert-primary,
+.alert-modal .disclaimer-buttons button#disclaimer-primary,
+.alert-modal .disclaimer-buttons button#warning-primary,
+.alert-modal .disclaimer-buttons button#announcement-primary,
+.alert-modal .disclaimer-buttons button#alert-primary,
+.alert-modal .warning-buttons button#disclaimer-primary,
+.alert-modal .warning-buttons button#warning-primary,
+.alert-modal .warning-buttons button#announcement-primary,
+.alert-modal .warning-buttons button#alert-primary,
+.alert-modal .announcement-buttons button#disclaimer-primary,
+.alert-modal .announcement-buttons button#warning-primary,
+.alert-modal .announcement-buttons button#announcement-primary,
+.alert-modal .announcement-buttons button#alert-primary,
+.alert-modal .alert-buttons button#disclaimer-primary,
+.alert-modal .alert-buttons button#warning-primary,
+.alert-modal .alert-buttons button#announcement-primary,
+.alert-modal .alert-buttons button#alert-primary {
+  padding: 6px 16px;
+  background: #ffc700;
+  border-radius: 8px;
+}
+.disclaimer-modal .disclaimer-buttons button#announcement-secondary, .disclaimer-modal .disclaimer-buttons button#warning-secondary,
+.disclaimer-modal .warning-buttons button#announcement-secondary,
+.disclaimer-modal .warning-buttons button#warning-secondary,
+.disclaimer-modal .announcement-buttons button#announcement-secondary,
+.disclaimer-modal .announcement-buttons button#warning-secondary,
+.disclaimer-modal .alert-buttons button#announcement-secondary,
+.disclaimer-modal .alert-buttons button#warning-secondary,
+.warning-modal .disclaimer-buttons button#announcement-secondary,
+.warning-modal .disclaimer-buttons button#warning-secondary,
+.warning-modal .warning-buttons button#announcement-secondary,
+.warning-modal .warning-buttons button#warning-secondary,
+.warning-modal .announcement-buttons button#announcement-secondary,
+.warning-modal .announcement-buttons button#warning-secondary,
+.warning-modal .alert-buttons button#announcement-secondary,
+.warning-modal .alert-buttons button#warning-secondary,
+.announcement-modal .disclaimer-buttons button#announcement-secondary,
+.announcement-modal .disclaimer-buttons button#warning-secondary,
+.announcement-modal .warning-buttons button#announcement-secondary,
+.announcement-modal .warning-buttons button#warning-secondary,
+.announcement-modal .announcement-buttons button#announcement-secondary,
+.announcement-modal .announcement-buttons button#warning-secondary,
+.announcement-modal .alert-buttons button#announcement-secondary,
+.announcement-modal .alert-buttons button#warning-secondary,
+.alert-modal .disclaimer-buttons button#announcement-secondary,
+.alert-modal .disclaimer-buttons button#warning-secondary,
+.alert-modal .warning-buttons button#announcement-secondary,
+.alert-modal .warning-buttons button#warning-secondary,
+.alert-modal .announcement-buttons button#announcement-secondary,
+.alert-modal .announcement-buttons button#warning-secondary,
+.alert-modal .alert-buttons button#announcement-secondary,
+.alert-modal .alert-buttons button#warning-secondary {
+  padding: 4px 16px;
+  color: #1b74da;
+  background: transparent;
+  cursor: pointer;
+}
+.disclaimer-modal.dark-mode,
+.warning-modal.dark-mode,
+.announcement-modal.dark-mode,
+.alert-modal.dark-mode {
+  background: #333333;
+}
+.disclaimer-modal.dark-mode .warning-icon svg path,
+.warning-modal.dark-mode .warning-icon svg path,
+.announcement-modal.dark-mode .warning-icon svg path,
+.alert-modal.dark-mode .warning-icon svg path {
+  fill: #FF7361;
+}
+.disclaimer-modal.dark-mode #disclaimer-title,
+.disclaimer-modal.dark-mode #warning-title,
+.disclaimer-modal.dark-mode #announcement-title,
+.disclaimer-modal.dark-mode #alert-title,
+.warning-modal.dark-mode #disclaimer-title,
+.warning-modal.dark-mode #warning-title,
+.warning-modal.dark-mode #announcement-title,
+.warning-modal.dark-mode #alert-title,
+.announcement-modal.dark-mode #disclaimer-title,
+.announcement-modal.dark-mode #warning-title,
+.announcement-modal.dark-mode #announcement-title,
+.announcement-modal.dark-mode #alert-title,
+.alert-modal.dark-mode #disclaimer-title,
+.alert-modal.dark-mode #warning-title,
+.alert-modal.dark-mode #announcement-title,
+.alert-modal.dark-mode #alert-title {
+  color: #ffffff;
+}
+.disclaimer-modal.dark-mode #warning-desc,
+.warning-modal.dark-mode #warning-desc,
+.announcement-modal.dark-mode #warning-desc,
+.alert-modal.dark-mode #warning-desc {
+  color: #D8D8D8;
+}
+.disclaimer-modal.dark-mode button#announcement-secondary, .disclaimer-modal.dark-mode button#warning-secondary,
+.warning-modal.dark-mode button#announcement-secondary,
+.warning-modal.dark-mode button#warning-secondary,
+.announcement-modal.dark-mode button#announcement-secondary,
+.announcement-modal.dark-mode button#warning-secondary,
+.alert-modal.dark-mode button#announcement-secondary,
+.alert-modal.dark-mode button#warning-secondary {
+  color: #48B6FF;
+}

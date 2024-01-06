@@ -1,0 +1,884 @@
+#data-body.light-mode, #data-body-paneui.light-mode {
+  background-color: #FFFFFF;
+}
+#data-body.light-mode.classic .password-editor-length input[type=range], #data-body-paneui.light-mode.classic .password-editor-length input[type=range] {
+  background-color: #1B74DA !important;
+}
+#data-body.light-mode.classic .themed-svg svg path, #data-body-paneui.light-mode.classic .themed-svg svg path {
+  fill: #1B74DA;
+}
+#data-body.light-mode.classic .keeper-active, #data-body-paneui.light-mode.classic .keeper-active {
+  border-bottom: 3px solid #1B74DA !important;
+}
+#data-body.light-mode.classic #containerforpromptlocation rect:first-of-type, #data-body-paneui.light-mode.classic #containerforpromptlocation rect:first-of-type {
+  fill: #1B74DA !important;
+}
+#data-body.light-mode.classic .choose-transition-effect label.selected svg path, #data-body-paneui.light-mode.classic .choose-transition-effect label.selected svg path {
+  fill: #1B74DA !important;
+}
+#data-body.light-mode.red_and_blue .password-editor-length input[type=range], #data-body-paneui.light-mode.red_and_blue .password-editor-length input[type=range] {
+  background-color: #AD1539 !important;
+}
+#data-body.light-mode.red_and_blue .themed-svg svg path, #data-body-paneui.light-mode.red_and_blue .themed-svg svg path {
+  fill: #AD1539;
+}
+#data-body.light-mode.red_and_blue .keeper-active, #data-body-paneui.light-mode.red_and_blue .keeper-active {
+  border-bottom: 3px solid #AD1539 !important;
+}
+#data-body.light-mode.red_and_blue #containerforpromptlocation rect:first-of-type, #data-body-paneui.light-mode.red_and_blue #containerforpromptlocation rect:first-of-type {
+  fill: #AD1539 !important;
+}
+#data-body.light-mode.red_and_blue .choose-transition-effect label.selected svg path, #data-body-paneui.light-mode.red_and_blue .choose-transition-effect label.selected svg path {
+  fill: #AD1539 !important;
+}
+#data-body.light-mode.phoenix .password-editor-length input[type=range], #data-body-paneui.light-mode.phoenix .password-editor-length input[type=range] {
+  background-color: #973900 !important;
+}
+#data-body.light-mode.phoenix .themed-svg svg path, #data-body-paneui.light-mode.phoenix .themed-svg svg path {
+  fill: #973900;
+}
+#data-body.light-mode.phoenix .keeper-active, #data-body-paneui.light-mode.phoenix .keeper-active {
+  border-bottom: 3px solid #973900 !important;
+}
+#data-body.light-mode.phoenix #containerforpromptlocation rect:first-of-type, #data-body-paneui.light-mode.phoenix #containerforpromptlocation rect:first-of-type {
+  fill: #973900 !important;
+}
+#data-body.light-mode.phoenix .choose-transition-effect label.selected svg path, #data-body-paneui.light-mode.phoenix .choose-transition-effect label.selected svg path {
+  fill: #973900 !important;
+}
+#data-body.light-mode.aluminum .password-editor-length input[type=range], #data-body-paneui.light-mode.aluminum .password-editor-length input[type=range] {
+  background-color: #2F2F2F !important;
+}
+#data-body.light-mode.aluminum .themed-svg svg path, #data-body-paneui.light-mode.aluminum .themed-svg svg path {
+  fill: #2F2F2F;
+}
+#data-body.light-mode.aluminum .keeper-active, #data-body-paneui.light-mode.aluminum .keeper-active {
+  border-bottom: 3px solid #2F2F2F !important;
+}
+#data-body.light-mode.aluminum #containerforpromptlocation rect:first-of-type, #data-body-paneui.light-mode.aluminum #containerforpromptlocation rect:first-of-type {
+  fill: #2F2F2F !important;
+}
+#data-body.light-mode.aluminum .choose-transition-effect label.selected svg path, #data-body-paneui.light-mode.aluminum .choose-transition-effect label.selected svg path {
+  fill: #2F2F2F !important;
+}
+#data-body.light-mode.deep_ocean .password-editor-length input[type=range], #data-body-paneui.light-mode.deep_ocean .password-editor-length input[type=range] {
+  background-color: #285290 !important;
+}
+#data-body.light-mode.deep_ocean .themed-svg svg path, #data-body-paneui.light-mode.deep_ocean .themed-svg svg path {
+  fill: #285290;
+}
+#data-body.light-mode.deep_ocean .keeper-active, #data-body-paneui.light-mode.deep_ocean .keeper-active {
+  border-bottom: 3px solid #285290 !important;
+}
+#data-body.light-mode.deep_ocean #containerforpromptlocation rect:first-of-type, #data-body-paneui.light-mode.deep_ocean #containerforpromptlocation rect:first-of-type {
+  fill: #285290 !important;
+}
+#data-body.light-mode.deep_ocean .choose-transition-effect label.selected svg path, #data-body-paneui.light-mode.deep_ocean .choose-transition-effect label.selected svg path {
+  fill: #285290 !important;
+}
+#data-body.light-mode.flame .password-editor-length input[type=range], #data-body-paneui.light-mode.flame .password-editor-length input[type=range] {
+  background-color: #894252 !important;
+}
+#data-body.light-mode.flame .themed-svg svg path, #data-body-paneui.light-mode.flame .themed-svg svg path {
+  fill: #894252;
+}
+#data-body.light-mode.flame .keeper-active, #data-body-paneui.light-mode.flame .keeper-active {
+  border-bottom: 3px solid #894252 !important;
+}
+#data-body.light-mode.flame #containerforpromptlocation rect:first-of-type, #data-body-paneui.light-mode.flame #containerforpromptlocation rect:first-of-type {
+  fill: #894252 !important;
+}
+#data-body.light-mode.flame .choose-transition-effect label.selected svg path, #data-body-paneui.light-mode.flame .choose-transition-effect label.selected svg path {
+  fill: #894252 !important;
+}
+#data-body.light-mode.blue_and_green .password-editor-length input[type=range], #data-body-paneui.light-mode.blue_and_green .password-editor-length input[type=range] {
+  background-color: #006A65 !important;
+}
+#data-body.light-mode.blue_and_green .themed-svg svg path, #data-body-paneui.light-mode.blue_and_green .themed-svg svg path {
+  fill: #006A65;
+}
+#data-body.light-mode.blue_and_green .keeper-active, #data-body-paneui.light-mode.blue_and_green .keeper-active {
+  border-bottom: 3px solid #006A65 !important;
+}
+#data-body.light-mode.blue_and_green #containerforpromptlocation rect:first-of-type, #data-body-paneui.light-mode.blue_and_green #containerforpromptlocation rect:first-of-type {
+  fill: #006A65 !important;
+}
+#data-body.light-mode.blue_and_green .choose-transition-effect label.selected svg path, #data-body-paneui.light-mode.blue_and_green .choose-transition-effect label.selected svg path {
+  fill: #006A65 !important;
+}
+#data-body.light-mode.glam .password-editor-length input[type=range], #data-body-paneui.light-mode.glam .password-editor-length input[type=range] {
+  background-color: #684872 !important;
+}
+#data-body.light-mode.glam .themed-svg svg path, #data-body-paneui.light-mode.glam .themed-svg svg path {
+  fill: #684872;
+}
+#data-body.light-mode.glam .keeper-active, #data-body-paneui.light-mode.glam .keeper-active {
+  border-bottom: 3px solid #684872 !important;
+}
+#data-body.light-mode.glam #containerforpromptlocation rect:first-of-type, #data-body-paneui.light-mode.glam #containerforpromptlocation rect:first-of-type {
+  fill: #684872 !important;
+}
+#data-body.light-mode.glam .choose-transition-effect label.selected svg path, #data-body-paneui.light-mode.glam .choose-transition-effect label.selected svg path {
+  fill: #684872 !important;
+}
+#data-body.light-mode.green .password-editor-length input[type=range], #data-body-paneui.light-mode.green .password-editor-length input[type=range] {
+  background-color: #43752B !important;
+}
+#data-body.light-mode.green .themed-svg svg path, #data-body-paneui.light-mode.green .themed-svg svg path {
+  fill: #43752B;
+}
+#data-body.light-mode.green .keeper-active, #data-body-paneui.light-mode.green .keeper-active {
+  border-bottom: 3px solid #43752B !important;
+}
+#data-body.light-mode.green #containerforpromptlocation rect:first-of-type, #data-body-paneui.light-mode.green #containerforpromptlocation rect:first-of-type {
+  fill: #43752B !important;
+}
+#data-body.light-mode.green .choose-transition-effect label.selected svg path, #data-body-paneui.light-mode.green .choose-transition-effect label.selected svg path {
+  fill: #43752B !important;
+}
+#data-body.light-mode.burgundy .password-editor-length input[type=range], #data-body-paneui.light-mode.burgundy .password-editor-length input[type=range] {
+  background-color: #422858 !important;
+}
+#data-body.light-mode.burgundy .themed-svg svg path, #data-body-paneui.light-mode.burgundy .themed-svg svg path {
+  fill: #422858;
+}
+#data-body.light-mode.burgundy .keeper-active, #data-body-paneui.light-mode.burgundy .keeper-active {
+  border-bottom: 3px solid #422858 !important;
+}
+#data-body.light-mode.burgundy #containerforpromptlocation rect:first-of-type, #data-body-paneui.light-mode.burgundy #containerforpromptlocation rect:first-of-type {
+  fill: #422858 !important;
+}
+#data-body.light-mode.burgundy .choose-transition-effect label.selected svg path, #data-body-paneui.light-mode.burgundy .choose-transition-effect label.selected svg path {
+  fill: #422858 !important;
+}
+#data-body.light-mode .swatch.classic, #data-body-paneui.light-mode .swatch.classic {
+  background-color: #191919;
+  background-image: none !important;
+}
+#data-body.light-mode .website-link,
+#data-body.light-mode #restore-default,
+#data-body.light-mode #records .record .more .field.url .field-value, #data-body-paneui.light-mode .website-link,
+#data-body-paneui.light-mode #restore-default,
+#data-body-paneui.light-mode #records .record .more .field.url .field-value {
+  color: #1B74DA;
+}
+#data-body.light-mode .password-editor-checkbox.themed-svg svg path, #data-body-paneui.light-mode .password-editor-checkbox.themed-svg svg path {
+  fill: #1B74DA;
+}
+#data-body.light-mode .password-editor-checkbox.themed-svg svg.unchecked path, #data-body-paneui.light-mode .password-editor-checkbox.themed-svg svg.unchecked path {
+  fill: #939393;
+}
+#data-body.light-mode .password-editor-length input[type=range]::-webkit-slider-thumb, #data-body-paneui.light-mode .password-editor-length input[type=range]::-webkit-slider-thumb {
+  background: #1B74DA !important;
+}
+#data-body.light-mode .password-editor-length input[type=range]::-moz-range-thumb, #data-body-paneui.light-mode .password-editor-length input[type=range]::-moz-range-thumb {
+  background: #1B74DA !important;
+}
+#data-body.light-mode #themes .themed-svg.selected svg path, #data-body.light-mode .input-fields .themed-svg.selected svg path, #data-body-paneui.light-mode #themes .themed-svg.selected svg path, #data-body-paneui.light-mode .input-fields .themed-svg.selected svg path {
+  fill: #1B74DA !important;
+}
+#data-body.light-mode .generate-password .generate-password-buttons button.copy-password, #data-body-paneui.light-mode .generate-password .generate-password-buttons button.copy-password {
+  color: #1B74DA;
+}
+
+#data-body-paneui.dark-mode #record-edit-root .record:hover .content {
+  background-color: #404040;
+}
+
+#data-body.dark-mode, #data-body-paneui.dark-mode {
+  color: white;
+  background-color: #282828;
+}
+#data-body.dark-mode.classic .password-editor-length input[type=range], #data-body-paneui.dark-mode.classic .password-editor-length input[type=range] {
+  background-color: #1B74DA !important;
+}
+#data-body.dark-mode.classic .themed-svg svg path, #data-body-paneui.dark-mode.classic .themed-svg svg path {
+  fill: #1B74DA;
+}
+#data-body.dark-mode.classic .keeper-active, #data-body-paneui.dark-mode.classic .keeper-active {
+  border-bottom: 3px solid #1B74DA !important;
+}
+#data-body.dark-mode.classic #containerforpromptlocation rect:first-of-type, #data-body-paneui.dark-mode.classic #containerforpromptlocation rect:first-of-type {
+  fill: #1B74DA !important;
+}
+#data-body.dark-mode.classic .choose-transition-effect label.selected svg path, #data-body-paneui.dark-mode.classic .choose-transition-effect label.selected svg path {
+  fill: #1B74DA !important;
+}
+#data-body.dark-mode.red_and_blue .password-editor-length input[type=range], #data-body-paneui.dark-mode.red_and_blue .password-editor-length input[type=range] {
+  background-color: #AD1539 !important;
+}
+#data-body.dark-mode.red_and_blue .themed-svg svg path, #data-body-paneui.dark-mode.red_and_blue .themed-svg svg path {
+  fill: #AD1539;
+}
+#data-body.dark-mode.red_and_blue .keeper-active, #data-body-paneui.dark-mode.red_and_blue .keeper-active {
+  border-bottom: 3px solid #AD1539 !important;
+}
+#data-body.dark-mode.red_and_blue #containerforpromptlocation rect:first-of-type, #data-body-paneui.dark-mode.red_and_blue #containerforpromptlocation rect:first-of-type {
+  fill: #AD1539 !important;
+}
+#data-body.dark-mode.red_and_blue .choose-transition-effect label.selected svg path, #data-body-paneui.dark-mode.red_and_blue .choose-transition-effect label.selected svg path {
+  fill: #AD1539 !important;
+}
+#data-body.dark-mode.phoenix .password-editor-length input[type=range], #data-body-paneui.dark-mode.phoenix .password-editor-length input[type=range] {
+  background-color: #973900 !important;
+}
+#data-body.dark-mode.phoenix .themed-svg svg path, #data-body-paneui.dark-mode.phoenix .themed-svg svg path {
+  fill: #973900;
+}
+#data-body.dark-mode.phoenix .keeper-active, #data-body-paneui.dark-mode.phoenix .keeper-active {
+  border-bottom: 3px solid #973900 !important;
+}
+#data-body.dark-mode.phoenix #containerforpromptlocation rect:first-of-type, #data-body-paneui.dark-mode.phoenix #containerforpromptlocation rect:first-of-type {
+  fill: #973900 !important;
+}
+#data-body.dark-mode.phoenix .choose-transition-effect label.selected svg path, #data-body-paneui.dark-mode.phoenix .choose-transition-effect label.selected svg path {
+  fill: #973900 !important;
+}
+#data-body.dark-mode.aluminum .password-editor-length input[type=range], #data-body-paneui.dark-mode.aluminum .password-editor-length input[type=range] {
+  background-color: #2F2F2F !important;
+}
+#data-body.dark-mode.aluminum .themed-svg svg path, #data-body-paneui.dark-mode.aluminum .themed-svg svg path {
+  fill: #2F2F2F;
+}
+#data-body.dark-mode.aluminum .keeper-active, #data-body-paneui.dark-mode.aluminum .keeper-active {
+  border-bottom: 3px solid #2F2F2F !important;
+}
+#data-body.dark-mode.aluminum #containerforpromptlocation rect:first-of-type, #data-body-paneui.dark-mode.aluminum #containerforpromptlocation rect:first-of-type {
+  fill: #2F2F2F !important;
+}
+#data-body.dark-mode.aluminum .choose-transition-effect label.selected svg path, #data-body-paneui.dark-mode.aluminum .choose-transition-effect label.selected svg path {
+  fill: #2F2F2F !important;
+}
+#data-body.dark-mode.deep_ocean .password-editor-length input[type=range], #data-body-paneui.dark-mode.deep_ocean .password-editor-length input[type=range] {
+  background-color: #285290 !important;
+}
+#data-body.dark-mode.deep_ocean .themed-svg svg path, #data-body-paneui.dark-mode.deep_ocean .themed-svg svg path {
+  fill: #285290;
+}
+#data-body.dark-mode.deep_ocean .keeper-active, #data-body-paneui.dark-mode.deep_ocean .keeper-active {
+  border-bottom: 3px solid #285290 !important;
+}
+#data-body.dark-mode.deep_ocean #containerforpromptlocation rect:first-of-type, #data-body-paneui.dark-mode.deep_ocean #containerforpromptlocation rect:first-of-type {
+  fill: #285290 !important;
+}
+#data-body.dark-mode.deep_ocean .choose-transition-effect label.selected svg path, #data-body-paneui.dark-mode.deep_ocean .choose-transition-effect label.selected svg path {
+  fill: #285290 !important;
+}
+#data-body.dark-mode.flame .password-editor-length input[type=range], #data-body-paneui.dark-mode.flame .password-editor-length input[type=range] {
+  background-color: #894252 !important;
+}
+#data-body.dark-mode.flame .themed-svg svg path, #data-body-paneui.dark-mode.flame .themed-svg svg path {
+  fill: #894252;
+}
+#data-body.dark-mode.flame .keeper-active, #data-body-paneui.dark-mode.flame .keeper-active {
+  border-bottom: 3px solid #894252 !important;
+}
+#data-body.dark-mode.flame #containerforpromptlocation rect:first-of-type, #data-body-paneui.dark-mode.flame #containerforpromptlocation rect:first-of-type {
+  fill: #894252 !important;
+}
+#data-body.dark-mode.flame .choose-transition-effect label.selected svg path, #data-body-paneui.dark-mode.flame .choose-transition-effect label.selected svg path {
+  fill: #894252 !important;
+}
+#data-body.dark-mode.blue_and_green .password-editor-length input[type=range], #data-body-paneui.dark-mode.blue_and_green .password-editor-length input[type=range] {
+  background-color: #006A65 !important;
+}
+#data-body.dark-mode.blue_and_green .themed-svg svg path, #data-body-paneui.dark-mode.blue_and_green .themed-svg svg path {
+  fill: #006A65;
+}
+#data-body.dark-mode.blue_and_green .keeper-active, #data-body-paneui.dark-mode.blue_and_green .keeper-active {
+  border-bottom: 3px solid #006A65 !important;
+}
+#data-body.dark-mode.blue_and_green #containerforpromptlocation rect:first-of-type, #data-body-paneui.dark-mode.blue_and_green #containerforpromptlocation rect:first-of-type {
+  fill: #006A65 !important;
+}
+#data-body.dark-mode.blue_and_green .choose-transition-effect label.selected svg path, #data-body-paneui.dark-mode.blue_and_green .choose-transition-effect label.selected svg path {
+  fill: #006A65 !important;
+}
+#data-body.dark-mode.glam .password-editor-length input[type=range], #data-body-paneui.dark-mode.glam .password-editor-length input[type=range] {
+  background-color: #684872 !important;
+}
+#data-body.dark-mode.glam .themed-svg svg path, #data-body-paneui.dark-mode.glam .themed-svg svg path {
+  fill: #684872;
+}
+#data-body.dark-mode.glam .keeper-active, #data-body-paneui.dark-mode.glam .keeper-active {
+  border-bottom: 3px solid #684872 !important;
+}
+#data-body.dark-mode.glam #containerforpromptlocation rect:first-of-type, #data-body-paneui.dark-mode.glam #containerforpromptlocation rect:first-of-type {
+  fill: #684872 !important;
+}
+#data-body.dark-mode.glam .choose-transition-effect label.selected svg path, #data-body-paneui.dark-mode.glam .choose-transition-effect label.selected svg path {
+  fill: #684872 !important;
+}
+#data-body.dark-mode.green .password-editor-length input[type=range], #data-body-paneui.dark-mode.green .password-editor-length input[type=range] {
+  background-color: #43752B !important;
+}
+#data-body.dark-mode.green .themed-svg svg path, #data-body-paneui.dark-mode.green .themed-svg svg path {
+  fill: #43752B;
+}
+#data-body.dark-mode.green .keeper-active, #data-body-paneui.dark-mode.green .keeper-active {
+  border-bottom: 3px solid #43752B !important;
+}
+#data-body.dark-mode.green #containerforpromptlocation rect:first-of-type, #data-body-paneui.dark-mode.green #containerforpromptlocation rect:first-of-type {
+  fill: #43752B !important;
+}
+#data-body.dark-mode.green .choose-transition-effect label.selected svg path, #data-body-paneui.dark-mode.green .choose-transition-effect label.selected svg path {
+  fill: #43752B !important;
+}
+#data-body.dark-mode.burgundy .password-editor-length input[type=range], #data-body-paneui.dark-mode.burgundy .password-editor-length input[type=range] {
+  background-color: #422858 !important;
+}
+#data-body.dark-mode.burgundy .themed-svg svg path, #data-body-paneui.dark-mode.burgundy .themed-svg svg path {
+  fill: #422858;
+}
+#data-body.dark-mode.burgundy .keeper-active, #data-body-paneui.dark-mode.burgundy .keeper-active {
+  border-bottom: 3px solid #422858 !important;
+}
+#data-body.dark-mode.burgundy #containerforpromptlocation rect:first-of-type, #data-body-paneui.dark-mode.burgundy #containerforpromptlocation rect:first-of-type {
+  fill: #422858 !important;
+}
+#data-body.dark-mode.burgundy .choose-transition-effect label.selected svg path, #data-body-paneui.dark-mode.burgundy .choose-transition-effect label.selected svg path {
+  fill: #422858 !important;
+}
+#data-body.dark-mode .website-link,
+#data-body.dark-mode #restore-default,
+#data-body.dark-mode #records .record .more .field.url .field-value,
+#data-body.dark-mode #login-with-a-different-account,
+#data-body.dark-mode .try-another-method, #data-body-paneui.dark-mode .website-link,
+#data-body-paneui.dark-mode #restore-default,
+#data-body-paneui.dark-mode #records .record .more .field.url .field-value,
+#data-body-paneui.dark-mode #login-with-a-different-account,
+#data-body-paneui.dark-mode .try-another-method {
+  color: #48B6FF !important;
+}
+#data-body.dark-mode .password-editor-checkbox.themed-svg svg path, #data-body-paneui.dark-mode .password-editor-checkbox.themed-svg svg path {
+  fill: #48B6FF;
+}
+#data-body.dark-mode .password-editor-checkbox.themed-svg svg.unchecked path, #data-body-paneui.dark-mode .password-editor-checkbox.themed-svg svg.unchecked path {
+  fill: #939393;
+}
+#data-body.dark-mode #themes .themed-svg.selected svg path, #data-body.dark-mode .input-fields .themed-svg.selected svg path, #data-body-paneui.dark-mode #themes .themed-svg.selected svg path, #data-body-paneui.dark-mode .input-fields .themed-svg.selected svg path {
+  fill: #48B6FF !important;
+}
+#data-body.dark-mode .record-details-pane .title, #data-body-paneui.dark-mode .record-details-pane .title {
+  color: white;
+}
+#data-body.dark-mode .record-details-pane .actions .share, #data-body-paneui.dark-mode .record-details-pane .actions .share {
+  color: #48B6FF;
+  border-color: #48B6FF;
+}
+#data-body.dark-mode .record-details-pane .actions .back svg rect, #data-body-paneui.dark-mode .record-details-pane .actions .back svg rect {
+  fill: white;
+}
+#data-body.dark-mode .record-details-pane .actions .options svg g rect, #data-body-paneui.dark-mode .record-details-pane .actions .options svg g rect {
+  fill: white;
+}
+#data-body.dark-mode .record-details-pane .actions .options svg rect, #data-body-paneui.dark-mode .record-details-pane .actions .options svg rect {
+  fill: #404040;
+}
+#data-body.dark-mode .record-details-pane .meta .record-type, #data-body-paneui.dark-mode .record-details-pane .meta .record-type {
+  color: #b3b3b3;
+}
+#data-body.dark-mode .record-details-pane .meta svg path, #data-body-paneui.dark-mode .record-details-pane .meta svg path {
+  fill: #888;
+}
+#data-body.dark-mode .record-details-pane .prompttoggle .toggle-text, #data-body-paneui.dark-mode .record-details-pane .prompttoggle .toggle-text {
+  color: white;
+}
+#data-body.dark-mode .record-details-pane .prompttoggle .md-toggle-checked label, #data-body-paneui.dark-mode .record-details-pane .prompttoggle .md-toggle-checked label {
+  background: #64DC16;
+}
+#data-body.dark-mode .record-details-pane .prompttoggle .md-toggle-checked label::after, #data-body-paneui.dark-mode .record-details-pane .prompttoggle .md-toggle-checked label::after {
+  border-color: #64DC16;
+}
+#data-body.dark-mode .record-details-pane .record-details-menu, #data-body-paneui.dark-mode .record-details-pane .record-details-menu {
+  background-color: #333;
+  color: white;
+}
+#data-body.dark-mode .record-details-pane .record-details-menu svg path, #data-body-paneui.dark-mode .record-details-pane .record-details-menu svg path {
+  fill: white;
+}
+#data-body.dark-mode .record-details-pane .field .password-strength-label, #data-body-paneui.dark-mode .record-details-pane .field .password-strength-label {
+  color: #B3B3B3;
+}
+#data-body.dark-mode .record-details-pane .field.url .field-value, #data-body-paneui.dark-mode .record-details-pane .field.url .field-value {
+  color: #48B6FF;
+}
+#data-body.dark-mode .record-details-pane .field .countdown-circle .progress, #data-body-paneui.dark-mode .record-details-pane .field .countdown-circle .progress {
+  stroke: #48B6FF;
+}
+#data-body.dark-mode .record-details-pane .field .field-value, #data-body-paneui.dark-mode .record-details-pane .field .field-value {
+  color: white;
+}
+#data-body.dark-mode .record-details-pane .field svg path, #data-body-paneui.dark-mode .record-details-pane .field svg path {
+  fill: white;
+}
+#data-body.dark-mode .generate-password .password-editor-field .password-strength-label, #data-body-paneui.dark-mode .generate-password .password-editor-field .password-strength-label {
+  color: #B3B3B3;
+}
+#data-body.dark-mode .generate-password .generate-password-content #password-header, #data-body-paneui.dark-mode .generate-password .generate-password-content #password-header {
+  color: #B3B3B3;
+}
+#data-body.dark-mode .generate-password .generate-password-content .password-editor-options .password-editor-length-label, #data-body-paneui.dark-mode .generate-password .generate-password-content .password-editor-options .password-editor-length-label {
+  color: #B3B3B3;
+}
+#data-body.dark-mode .generate-password .generate-password-buttons button.copy-password, #data-body-paneui.dark-mode .generate-password .generate-password-buttons button.copy-password {
+  color: #48B6FF;
+}
+#data-body.dark-mode .password-editor-length input[type=range]::-webkit-slider-thumb, #data-body-paneui.dark-mode .password-editor-length input[type=range]::-webkit-slider-thumb {
+  background: #48B6FF !important;
+}
+#data-body.dark-mode .password-editor-length input[type=range]::-moz-range-thumb, #data-body-paneui.dark-mode .password-editor-length input[type=range]::-moz-range-thumb {
+  background: #48B6FF !important;
+}
+#data-body.dark-mode #keeper-push-sent #keeper-push-loading-icon .dot, #data-body-paneui.dark-mode #keeper-push-sent #keeper-push-loading-icon .dot {
+  background-color: white;
+}
+#data-body.dark-mode hr, #data-body-paneui.dark-mode hr {
+  background: #565656 !important;
+}
+#data-body.dark-mode [tooltip]:after, #data-body-paneui.dark-mode [tooltip]:after {
+  background: white;
+  color: black;
+}
+#data-body.dark-mode [tooltip]:before, #data-body-paneui.dark-mode [tooltip]:before {
+  border-bottom-color: white;
+}
+#data-body.dark-mode [tooltip].tooltip-top:before, #data-body-paneui.dark-mode [tooltip].tooltip-top:before {
+  border-bottom-color: transparent;
+  border-top-color: white;
+}
+#data-body.dark-mode [tooltip].tooltip-fullleft:before, #data-body-paneui.dark-mode [tooltip].tooltip-fullleft:before {
+  border-bottom-color: transparent;
+  border-left-color: white;
+}
+#data-body.dark-mode [tooltip].tooltip-fullright:before, #data-body-paneui.dark-mode [tooltip].tooltip-fullright:before {
+  border-bottom-color: transparent;
+  border-right-color: white;
+}
+#data-body.dark-mode #menu > .setting:hover,
+#data-body.dark-mode #settings > .setting:hover, #data-body-paneui.dark-mode #menu > .setting:hover,
+#data-body-paneui.dark-mode #settings > .setting:hover {
+  background-color: #565656;
+}
+#data-body.dark-mode .privacy-screen-icon path, #data-body-paneui.dark-mode .privacy-screen-icon path {
+  fill: white;
+}
+#data-body.dark-mode #menu .logout.setting svg path:nth-child(1), #data-body-paneui.dark-mode #menu .logout.setting svg path:nth-child(1) {
+  fill: none;
+}
+#data-body.dark-mode #menu .logout.setting svg path:nth-child(2),
+#data-body.dark-mode #menu .logout.setting #logout-label, #data-body-paneui.dark-mode #menu .logout.setting svg path:nth-child(2),
+#data-body-paneui.dark-mode #menu .logout.setting #logout-label {
+  color: #FF7361;
+  fill: #FF7361;
+}
+#data-body.dark-mode #menu .setting svg path, #data-body-paneui.dark-mode #menu .setting svg path {
+  fill: white;
+}
+#data-body.dark-mode #menu .setting .setting-end-side-text, #data-body-paneui.dark-mode #menu .setting .setting-end-side-text {
+  color: #b3b3b3;
+}
+#data-body.dark-mode #menu .setting.console svg path:nth-child(1), #data-body-paneui.dark-mode #menu .setting.console svg path:nth-child(1) {
+  fill: white !important;
+}
+#data-body.dark-mode #menu .setting.console svg path:nth-child(2), #data-body-paneui.dark-mode #menu .setting.console svg path:nth-child(2) {
+  fill: none !important;
+}
+#data-body.dark-mode #menu .setting.options svg path:nth-child(2), #data-body-paneui.dark-mode #menu .setting.options svg path:nth-child(2) {
+  fill: white !important;
+}
+#data-body.dark-mode #menu .setting.options svg path:nth-child(1), #data-body-paneui.dark-mode #menu .setting.options svg path:nth-child(1) {
+  fill: none !important;
+}
+#data-body.dark-mode button.pretty.transparent, #data-body-paneui.dark-mode button.pretty.transparent {
+  color: white;
+}
+#data-body.dark-mode #duo .duobuttons button:disabled, #data-body-paneui.dark-mode #duo .duobuttons button:disabled {
+  background-color: #373737;
+}
+#data-body.dark-mode keeper-record svg path,
+#data-body.dark-mode .record-edit-root svg path, #data-body-paneui.dark-mode keeper-record svg path,
+#data-body-paneui.dark-mode .record-edit-root svg path {
+  fill: white;
+}
+#data-body.dark-mode #change-location-prompt-settings .title svg path, #data-body-paneui.dark-mode #change-location-prompt-settings .title svg path {
+  fill: white;
+}
+#data-body.dark-mode ~ .overlayalert,
+#data-body.dark-mode ~ .overlayprompt, #data-body-paneui.dark-mode ~ .overlayalert,
+#data-body-paneui.dark-mode ~ .overlayprompt {
+  border: 1px solid #979797 !important;
+  background: #1f1f1f !important;
+}
+#data-body.dark-mode ~ .overlayalert #fixinatorOverlayIcon svg path,
+#data-body.dark-mode ~ .overlayprompt #fixinatorOverlayIcon svg path, #data-body-paneui.dark-mode ~ .overlayalert #fixinatorOverlayIcon svg path,
+#data-body-paneui.dark-mode ~ .overlayprompt #fixinatorOverlayIcon svg path {
+  fill: #FF7361;
+}
+#data-body.dark-mode ~ .overlayalert .prompttitle,
+#data-body.dark-mode ~ .overlayalert .promptmessage,
+#data-body.dark-mode ~ .overlayprompt .prompttitle,
+#data-body.dark-mode ~ .overlayprompt .promptmessage, #data-body-paneui.dark-mode ~ .overlayalert .prompttitle,
+#data-body-paneui.dark-mode ~ .overlayalert .promptmessage,
+#data-body-paneui.dark-mode ~ .overlayprompt .prompttitle,
+#data-body-paneui.dark-mode ~ .overlayprompt .promptmessage {
+  color: white !important;
+}
+#data-body.dark-mode .indicator.on, #data-body-paneui.dark-mode .indicator.on {
+  background: #1A9732;
+}
+#data-body.dark-mode .indicator.off, #data-body-paneui.dark-mode .indicator.off {
+  border: 2px solid #888888;
+}
+#data-body.dark-mode #svg-override, #data-body-paneui.dark-mode #svg-override {
+  fill: none;
+}
+#data-body.dark-mode .matchingrecords svg rect, #data-body-paneui.dark-mode .matchingrecords svg rect {
+  fill: white !important;
+}
+#data-body.dark-mode #sort-selector, #data-body-paneui.dark-mode #sort-selector {
+  background: #363636;
+  box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.7);
+}
+#data-body.dark-mode #sort-selector #sort-by-title, #data-body-paneui.dark-mode #sort-selector #sort-by-title {
+  color: white;
+}
+#data-body.dark-mode #sort-selector .sort-item:hover, #data-body-paneui.dark-mode #sort-selector .sort-item:hover {
+  background-color: #565656 !important;
+}
+#data-body.dark-mode #sort-selector svg path, #data-body-paneui.dark-mode #sort-selector svg path {
+  fill: white !important;
+}
+#data-body.dark-mode .record-edit-field svg path, #data-body-paneui.dark-mode .record-edit-field svg path {
+  fill: white;
+}
+#data-body.dark-mode .region-selector-items, #data-body-paneui.dark-mode .region-selector-items {
+  color: white !important;
+}
+#data-body.dark-mode div.keeper-select,
+#data-body.dark-mode div.keeper-select-usability,
+#data-body.dark-mode .password-editor-title,
+#data-body.dark-mode .keeper-input,
+#data-body.dark-mode .password-editor-field,
+#data-body.dark-mode .password-editor-checkbox-label, #data-body-paneui.dark-mode div.keeper-select,
+#data-body-paneui.dark-mode div.keeper-select-usability,
+#data-body-paneui.dark-mode .password-editor-title,
+#data-body-paneui.dark-mode .keeper-input,
+#data-body-paneui.dark-mode .password-editor-field,
+#data-body-paneui.dark-mode .password-editor-checkbox-label {
+  color: white !important;
+}
+#data-body.dark-mode .cs-select.cs-skin-elastic span, #data-body-paneui.dark-mode .cs-select.cs-skin-elastic span {
+  background: transparent;
+  color: white;
+}
+#data-body.dark-mode .cs-select.cs-skin-elastic .cs-options, #data-body-paneui.dark-mode .cs-select.cs-skin-elastic .cs-options {
+  background: #363636;
+  border: 1px solid #f0f0f0;
+}
+#data-body.dark-mode .cs-select.cs-skin-elastic .cs-options li svg rect, #data-body-paneui.dark-mode .cs-select.cs-skin-elastic .cs-options li svg rect {
+  fill: white;
+}
+#data-body.dark-mode .cs-select.cs-skin-elastic .cs-options li:hover, #data-body-paneui.dark-mode .cs-select.cs-skin-elastic .cs-options li:hover {
+  background: #565656;
+}
+#data-body.dark-mode #sso-choice-dropdown, #data-body-paneui.dark-mode #sso-choice-dropdown {
+  background: #363636;
+  color: white;
+}
+#data-body.dark-mode #sso-choice-dropdown .sso-choice-item .title, #data-body-paneui.dark-mode #sso-choice-dropdown .sso-choice-item .title {
+  color: white;
+}
+#data-body.dark-mode #sso-choice-dropdown .sso-choice-item .desc, #data-body-paneui.dark-mode #sso-choice-dropdown .sso-choice-item .desc {
+  color: #B3B3B3;
+}
+#data-body.dark-mode #sso-choice-dropdown .sso-choice-item:hover, #data-body-paneui.dark-mode #sso-choice-dropdown .sso-choice-item:hover {
+  background-color: #565656;
+}
+#data-body.dark-mode #login #the-multi-login-dropdown, #data-body-paneui.dark-mode #login #the-multi-login-dropdown {
+  background: #363636;
+  color: white;
+}
+#data-body.dark-mode #login #the-multi-login-dropdown .the-entries, #data-body-paneui.dark-mode #login #the-multi-login-dropdown .the-entries {
+  color: white;
+  background-color: #363636;
+}
+#data-body.dark-mode #login #the-multi-login-dropdown .the-entries:hover, #data-body-paneui.dark-mode #login #the-multi-login-dropdown .the-entries:hover {
+  background: #565656 !important;
+}
+#data-body.dark-mode #login #the-multi-login-dropdown .the-entries .close-icon:hover, #data-body-paneui.dark-mode #login #the-multi-login-dropdown .the-entries .close-icon:hover {
+  background: #565656 !important;
+}
+#data-body.dark-mode #login #the-multi-login-dropdown .the-entries svg path:first-child, #data-body-paneui.dark-mode #login #the-multi-login-dropdown .the-entries svg path:first-child {
+  fill: white;
+}
+#data-body.dark-mode #login .region-selector-popup,
+#data-body.dark-mode #login .need-help-items, #data-body-paneui.dark-mode #login .region-selector-popup,
+#data-body-paneui.dark-mode #login .need-help-items {
+  background: #363636 !important;
+}
+#data-body.dark-mode #login .region-selector-popup .region-selector-list-title,
+#data-body.dark-mode #login .need-help-items .region-selector-list-title, #data-body-paneui.dark-mode #login .region-selector-popup .region-selector-list-title,
+#data-body-paneui.dark-mode #login .need-help-items .region-selector-list-title {
+  color: white;
+}
+#data-body.dark-mode #login .region-selector-popup .need-help-item,
+#data-body.dark-mode #login .region-selector-popup .region-selector-item,
+#data-body.dark-mode #login .need-help-items .need-help-item,
+#data-body.dark-mode #login .need-help-items .region-selector-item, #data-body-paneui.dark-mode #login .region-selector-popup .need-help-item,
+#data-body-paneui.dark-mode #login .region-selector-popup .region-selector-item,
+#data-body-paneui.dark-mode #login .need-help-items .need-help-item,
+#data-body-paneui.dark-mode #login .need-help-items .region-selector-item {
+  color: white;
+}
+#data-body.dark-mode #login .region-selector-popup .need-help-item svg rect,
+#data-body.dark-mode #login .region-selector-popup .region-selector-item svg rect,
+#data-body.dark-mode #login .need-help-items .need-help-item svg rect,
+#data-body.dark-mode #login .need-help-items .region-selector-item svg rect, #data-body-paneui.dark-mode #login .region-selector-popup .need-help-item svg rect,
+#data-body-paneui.dark-mode #login .region-selector-popup .region-selector-item svg rect,
+#data-body-paneui.dark-mode #login .need-help-items .need-help-item svg rect,
+#data-body-paneui.dark-mode #login .need-help-items .region-selector-item svg rect {
+  fill: white;
+}
+#data-body.dark-mode #login .region-selector-popup .need-help-item:hover,
+#data-body.dark-mode #login .region-selector-popup .region-selector-item:hover,
+#data-body.dark-mode #login .need-help-items .need-help-item:hover,
+#data-body.dark-mode #login .need-help-items .region-selector-item:hover, #data-body-paneui.dark-mode #login .region-selector-popup .need-help-item:hover,
+#data-body-paneui.dark-mode #login .region-selector-popup .region-selector-item:hover,
+#data-body-paneui.dark-mode #login .need-help-items .need-help-item:hover,
+#data-body-paneui.dark-mode #login .need-help-items .region-selector-item:hover {
+  background: #565656;
+}
+#data-body.dark-mode #login .error, #data-body-paneui.dark-mode #login .error {
+  color: #FF7361;
+}
+#data-body.dark-mode #login .error.login-error-modal, #data-body-paneui.dark-mode #login .error.login-error-modal {
+  color: white;
+}
+#data-body.dark-mode #login #two-factor-svg-holder g, #data-body-paneui.dark-mode #login #two-factor-svg-holder g {
+  fill: white;
+}
+#data-body.dark-mode #account-share, #data-body-paneui.dark-mode #account-share {
+  background: #282828;
+}
+#data-body.dark-mode #account-share .account-share-message, #data-body-paneui.dark-mode #account-share .account-share-message {
+  color: white;
+}
+#data-body.dark-mode #account-share button, #data-body-paneui.dark-mode #account-share button {
+  border: none !important;
+}
+#data-body.dark-mode textarea,
+#data-body.dark-mode .record-field-title, #data-body-paneui.dark-mode textarea,
+#data-body-paneui.dark-mode .record-field-title {
+  color: #B3B3B3 !important;
+  border-bottom: #B3B3B3 !important;
+}
+#data-body.dark-mode .record-edit .prompttoggle .toggle-icon svg:not(.check) path, #data-body-paneui.dark-mode .record-edit .prompttoggle .toggle-icon svg:not(.check) path {
+  fill: white;
+}
+#data-body.dark-mode .record-edit, #data-body-paneui.dark-mode .record-edit {
+  margin-bottom: -8px;
+}
+#data-body.dark-mode #keeper-approve-request-icon g, #data-body-paneui.dark-mode #keeper-approve-request-icon g {
+  fill: #64DC16;
+}
+#data-body.dark-mode #keeper-deny-request g, #data-body-paneui.dark-mode #keeper-deny-request g {
+  fill: #FF7361;
+}
+#data-body.dark-mode #search-root, #data-body-paneui.dark-mode #search-root {
+  color: white;
+  background-color: #282828;
+}
+#data-body.dark-mode #search-root input, #data-body-paneui.dark-mode #search-root input {
+  background-color: #3D3D3D;
+  color: #fff;
+}
+#data-body.dark-mode #search-root input:focus, #data-body-paneui.dark-mode #search-root input:focus {
+  border-color: #48B6FF;
+}
+#data-body.dark-mode #search-root #svg-container-react svg path, #data-body-paneui.dark-mode #search-root #svg-container-react svg path {
+  fill: white;
+}
+#data-body.dark-mode .themable,
+#data-body.dark-mode #data-body,
+#data-body.dark-mode #data-body-paneui,
+#data-body.dark-mode #search-input,
+#data-body.dark-mode #device-approval,
+#data-body.dark-mode #keeper-push-sent,
+#data-body.dark-mode #keeper-request-block, #data-body-paneui.dark-mode .themable,
+#data-body-paneui.dark-mode #data-body,
+#data-body-paneui.dark-mode #data-body-paneui,
+#data-body-paneui.dark-mode #search-input,
+#data-body-paneui.dark-mode #device-approval,
+#data-body-paneui.dark-mode #keeper-push-sent,
+#data-body-paneui.dark-mode #keeper-request-block {
+  color: white;
+}
+#data-body.dark-mode #records .record-count, #data-body-paneui.dark-mode #records .record-count {
+  color: white;
+}
+#data-body.dark-mode #records .iconbutton svg path,
+#data-body.dark-mode #records .record-menu-icon svg path,
+#data-body.dark-mode #records .show svg path,
+#data-body.dark-mode #records .website-launch-icon svg path, #data-body-paneui.dark-mode #records .iconbutton svg path,
+#data-body-paneui.dark-mode #records .record-menu-icon svg path,
+#data-body-paneui.dark-mode #records .show svg path,
+#data-body-paneui.dark-mode #records .website-launch-icon svg path {
+  fill: white;
+}
+#data-body.dark-mode #records .no-results svg path, #data-body-paneui.dark-mode #records .no-results svg path {
+  fill: white;
+}
+#data-body.dark-mode #records .no-results svg path:first-child, #data-body-paneui.dark-mode #records .no-results svg path:first-child {
+  fill: none;
+}
+#data-body.dark-mode .record-menu, #data-body-paneui.dark-mode .record-menu {
+  background: #282828;
+  color: white;
+  border: 1px solid #888888;
+}
+#data-body.dark-mode .record-menu svg path, #data-body-paneui.dark-mode .record-menu svg path {
+  fill: #888888;
+}
+#data-body.dark-mode .record-menu .record-menu-item:hover, #data-body-paneui.dark-mode .record-menu .record-menu-item:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+#data-body.dark-mode .record-menu .record-menu-item:hover svg path, #data-body-paneui.dark-mode .record-menu .record-menu-item:hover svg path {
+  fill: white;
+}
+#data-body.dark-mode .record-menu .record-menu-divider, #data-body-paneui.dark-mode .record-menu .record-menu-divider {
+  background: #888888;
+}
+#data-body.dark-mode .security-settings:hover, #data-body-paneui.dark-mode .security-settings:hover {
+  background-color: transparent;
+}
+#data-body.dark-mode #matching-record-menu-item path svg, #data-body-paneui.dark-mode #matching-record-menu-item path svg {
+  fill: white !important;
+}
+#data-body.dark-mode #twofactorcode .expiration-selector-items, #data-body-paneui.dark-mode #twofactorcode .expiration-selector-items {
+  background: #202020;
+}
+#data-body.dark-mode #twofactorcode .expiration-selector-items .expiration-title, #data-body-paneui.dark-mode #twofactorcode .expiration-selector-items .expiration-title {
+  color: white;
+}
+#data-body.dark-mode #twofactorcode .expiration-selector-items .expiration-dropdown-container-root .selected-checkmark, #data-body-paneui.dark-mode #twofactorcode .expiration-selector-items .expiration-dropdown-container-root .selected-checkmark {
+  color: white;
+}
+#data-body.dark-mode #twofactorcode .expiration-selector-items .expiration-selector-item, #data-body-paneui.dark-mode #twofactorcode .expiration-selector-items .expiration-selector-item {
+  color: #565656;
+}
+#data-body.dark-mode #timer form svg path, #data-body-paneui.dark-mode #timer form svg path {
+  fill: white !important;
+}
+#data-body.dark-mode #timer input, #data-body-paneui.dark-mode #timer input {
+  background-color: transparent;
+  color: white;
+}
+#data-body.dark-mode #settings-root #timer-toggle-row svg path, #data-body-paneui.dark-mode #settings-root #timer-toggle-row svg path {
+  fill: white;
+}
+#data-body.dark-mode #settings-root .prompttoggle .icon svg, #data-body-paneui.dark-mode #settings-root .prompttoggle .icon svg {
+  filter: invert(1);
+}
+#data-body.dark-mode #settings-root .autosubmit icon svg,
+#data-body.dark-mode #settings-root .security icon svg, #data-body-paneui.dark-mode #settings-root .autosubmit icon svg,
+#data-body-paneui.dark-mode #settings-root .security icon svg {
+  filter: none;
+}
+#data-body.dark-mode #settings-root .settings-pane .title svg path,
+#data-body.dark-mode #settings-root .settings-pane .title svg rect, #data-body-paneui.dark-mode #settings-root .settings-pane .title svg path,
+#data-body-paneui.dark-mode #settings-root .settings-pane .title svg rect {
+  fill: white;
+}
+#data-body.dark-mode #settings-root #header-for-dropdown-prompt-appearance, #data-body-paneui.dark-mode #settings-root #header-for-dropdown-prompt-appearance {
+  color: #b3b3b3;
+}
+#data-body.dark-mode #settings-root #security-settings .description, #data-body-paneui.dark-mode #settings-root #security-settings .description {
+  color: #B3B3B3;
+}
+#data-body.dark-mode #settings-root #security-settings .align-center .icon svg path:first-child, #data-body-paneui.dark-mode #settings-root #security-settings .align-center .icon svg path:first-child {
+  fill: none;
+}
+#data-body.dark-mode #settings-root #security-settings .align-center .icon svg path:not(:first-child), #data-body-paneui.dark-mode #settings-root #security-settings .align-center .icon svg path:not(:first-child) {
+  fill: white;
+}
+#data-body.dark-mode #settings-root .indicator.on, #data-body-paneui.dark-mode #settings-root .indicator.on {
+  background-color: #1A9732;
+}
+#data-body.dark-mode #settings-root .settings-arrow svg path:nth-child(2), #data-body-paneui.dark-mode #settings-root .settings-arrow svg path:nth-child(2) {
+  fill: none;
+}
+#data-body.dark-mode #settings-root .settings-arrow svg path:nth-child(1), #data-body-paneui.dark-mode #settings-root .settings-arrow svg path:nth-child(1) {
+  fill: white;
+}
+#data-body.dark-mode .theme-icon path,
+#data-body.dark-mode .password-editor-icon path, #data-body-paneui.dark-mode .theme-icon path,
+#data-body-paneui.dark-mode .password-editor-icon path {
+  fill: white;
+}
+#data-body.dark-mode #data-body *:focus-visible.focus-visible, #data-body.dark-mode #data-body-paneui *:focus-visible.focus-visible, #data-body-paneui.dark-mode #data-body *:focus-visible.focus-visible, #data-body-paneui.dark-mode #data-body-paneui *:focus-visible.focus-visible {
+  border-radius: 4px;
+  outline: 2px solid #054B91;
+}
+
+.swatch-bg.classic {
+  background: #191919;
+}
+.swatch-bg.red_and_blue {
+  background: #AD1539;
+}
+.swatch-bg.phoenix {
+  background: #973900;
+}
+.swatch-bg.aluminum {
+  background: #2F2F2F;
+}
+.swatch-bg.deep_ocean {
+  background: #285290;
+}
+.swatch-bg.flame {
+  background: #894252;
+}
+.swatch-bg.blue_and_green {
+  background: #006A65;
+}
+.swatch-bg.glam {
+  background: #684872;
+}
+.swatch-bg.green {
+  background: #43752B;
+}
+.swatch-bg.burgundy {
+  background: #422858;
+}
+
+#header.classic {
+  background: #191919;
+}
+#header.red_and_blue {
+  background: #AD1539;
+}
+#header.phoenix {
+  background: #973900;
+}
+#header.aluminum {
+  background: #2F2F2F;
+}
+#header.deep_ocean {
+  background: #285290;
+}
+#header.flame {
+  background: #894252;
+}
+#header.blue_and_green {
+  background: #006A65;
+}
+#header.glam {
+  background: #684872;
+}
+#header.green {
+  background: #43752B;
+}
+#header.burgundy {
+  background: #422858;
+}

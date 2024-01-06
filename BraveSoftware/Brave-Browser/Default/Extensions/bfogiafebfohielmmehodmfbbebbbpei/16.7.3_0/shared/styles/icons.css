@@ -1,0 +1,15 @@
+.passkey-icon {
+  box-sizing: border-box;
+  position: relative;
+  width: 32px;
+  height: 32px;
+  background: #1B74DA;
+  border-radius: 8px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.passkey-icon svg path {
+  fill: white;
+}

@@ -1,0 +1,23 @@
+@font-face {
+  font-family: 'SFUIText-Regular';
+  src: url(chrome-extension://__MSG_@@extension_id__/fonts/custom/SFUIText-Regular.woff) format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SFUIText-Medium';
+  src: url(chrome-extension://__MSG_@@extension_id__/fonts/custom/SFUIText-Medium.woff) format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.sfuitext-regular {
+  font-family: "SFUIText-Regular" !important;
+  color: #333;
+}
+
+.sfuitext-medium {
+  font-family: "SFUIText-Medium" !important;
+  color: #333;
+}

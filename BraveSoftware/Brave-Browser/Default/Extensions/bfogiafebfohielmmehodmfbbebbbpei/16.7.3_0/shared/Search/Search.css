@@ -1,0 +1,108 @@
+#search-root #search {
+  width: 100%;
+}
+
+#search {
+  display: flex;
+  align-items: center;
+  padding: 0 24px;
+  position: relative;
+}
+#search.promptWindow {
+  margin: 8px;
+  padding: unset;
+}
+#search.promptWindow input {
+  padding: 6px 0px !important;
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.6);
+  background: initial;
+  font-size: 14px;
+  border-radius: initial;
+  height: initial;
+}
+#search.promptWindow input:focus {
+  border-bottom-color: #1B74DA;
+}
+#search.promptWindow .search-input-icon {
+  margin-left: 12px;
+  height: 20px;
+  width: 20px;
+}
+#search.promptWindow .search-input-icon.close {
+  right: 0px;
+}
+#search.collapsed {
+  margin: 0;
+  border: none;
+}
+#search.collapsed input {
+  height: 0;
+  width: 0;
+  padding: 0;
+  border: 0;
+}
+#search input {
+  font-family: "Overpass";
+  font-size: 15px;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  color: black;
+  background: #F0F0F0;
+  flex: 1;
+  height: 40px;
+  transition: width 1s;
+  padding: 0 8px;
+  padding-left: 40px !important;
+}
+#search input::placeholder {
+  color: #565656;
+  opacity: 1;
+}
+#search input.has-input {
+  padding-left: 0px;
+  max-width: 304px;
+}
+#search input:focus {
+  outline: none;
+  border-color: #054B91;
+}
+.dark-mode #search input {
+  color: white;
+}
+.dark-mode #search input::placeholder {
+  color: #B3B3B3;
+  opacity: 1;
+}
+#search .search-input-icon {
+  position: absolute;
+  height: 24px;
+  width: 24px;
+}
+#search .search-input-icon:first-child {
+  margin-left: 12px;
+}
+#search .search-input-icon.close {
+  right: 44px;
+  top: 8px;
+}
+.dark-mode #search .search-input-icon svg path {
+  fill: #B3B3B3;
+}
+
+.rtl #search input {
+  padding-right: 30px !important;
+  padding-left: 0px;
+}
+.rtl #search input.has-input {
+  padding-right: 0px;
+}
+.rtl #search .search-input-icon.close {
+  left: 18px;
+  right: inherit;
+}
+
+keeperlist .search-input-icon {
+  position: relative;
+  left: 0px;
+}

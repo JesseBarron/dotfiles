@@ -1,0 +1,579 @@
+.label-d8 {
+  color: #d8d8d8;
+}
+
+#search-results {
+  color: #000;
+  flex: 1 1 auto;
+}
+
+#records {
+  font-family: "Overpass";
+  height: 100%;
+  /*
+   * Originally here because Edge(?) was showing #records with some height but
+   * Safari gets confused and can't tell when #records is no longer :empty
+  &:empty {
+    display: none;
+  }
+  */
+}
+#records .record-results {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+#records .no-results {
+  padding: 5px 10px 10px 20px;
+}
+#records .no-results .text {
+  font-family: "Overpass-SemiBold";
+  font-size: 17px;
+  text-align: center;
+}
+.dark-mode #records .no-results .text {
+  color: white;
+}
+#records .record-item-divider {
+  height: 1px;
+  background-color: #D8D8D8;
+  margin: 2px 24px;
+  width: 338px;
+}
+.dark-mode #records .record-item-divider {
+  background-color: #565656;
+}
+#records .record-wrapper:hover .record-item-divider {
+  background-color: transparent;
+}
+#records .record-wrapper:hover .record-item-divider.dark-mode {
+  background-color: transparent;
+}
+#records .record-wrapper:hover + .record-wrapper .record-item-divider {
+  background-color: transparent;
+}
+#records .record-wrapper:hover + .record-wrapper .record-item-divider.dark-mode {
+  background-color: transparent;
+}
+#records .record-wrapper .record {
+  outline: none;
+  user-select: none;
+  padding: 0 24px;
+}
+#records .record-wrapper .record.scrollablePading {
+  padding-right: 0px;
+}
+#records .record-wrapper .record:hover:not([aria-expanded=true]) {
+  border: none;
+}
+#records .record-wrapper .record:hover:not([aria-expanded=true]) .content {
+  background-color: #F0F0F0;
+}
+.dark-mode #records .record-wrapper .record:hover:not([aria-expanded=true]) .content {
+  background-color: #3D3D3D;
+}
+#records .record-wrapper .record .content {
+  border: 2px solid transparent;
+  border-radius: 8px;
+  width: 336px;
+}
+#records .record-wrapper .record.selected .content {
+  outline: 2px solid #054B91;
+}
+.dark-mode #records .record-wrapper .record.selected .content {
+  outline: 2px solid #48B6FF;
+}
+#records .record-wrapper .record[aria-expanded=true] .content {
+  border-color: transparent;
+}
+#records .record-wrapper .record .content > div:first-child {
+  align-items: center;
+  display: flex;
+  min-height: 64px;
+}
+#records .record-wrapper .record .content > div:first-child .expand {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+  margin: 0 4px 0 0;
+}
+#records .record-wrapper .record .content > div:first-child .expand[tooltip]::after {
+  margin-right: -4px;
+}
+.rtl #records .record-wrapper .record .content > div:first-child .expand[tooltip]::after {
+  right: unset;
+}
+#records .record-wrapper .record .content > div:first-child .expand path {
+  fill: #000;
+}
+#records .record-wrapper .record .content > div:first-child .expand:hover {
+  background-color: rgba(0, 0, 0, 0);
+  cursor: pointer;
+}
+#records .record-wrapper .record .content > div:first-child .record-icons {
+  width: 40px;
+  height: 40px;
+  margin: 0 12px 0 8px;
+  background: #FFFFFF;
+  border: 1px solid #D8D8D8;
+  border-radius: 8px;
+}
+.rtl #records .record-wrapper .record .content > div:first-child .record-icons {
+  margin: 0 8px 0 12px;
+}
+#records .record-wrapper .record .content > div:first-child .record-icons .record-icon {
+  height: 24px;
+  width: 24px;
+  margin: 7px;
+}
+#records .record-wrapper .record .content > div:first-child .record-icons.green {
+  border: 4px solid #1A9732;
+}
+#records .record-wrapper .record .content > div:first-child .record-icons.green .record-icon {
+  margin: 4px;
+}
+#records .record-wrapper .record .content > div:first-child .record-icons.green .record-icon svg > path {
+  fill: #1A9732 !important;
+}
+#records .record-wrapper .record .content > div:first-child .record-icons.gray {
+  border: 4px solid #888888;
+}
+#records .record-wrapper .record .content > div:first-child .record-icons.gray .record-icon {
+  margin: 4px;
+}
+#records .record-wrapper .record .content > div:first-child .record-icons.gray .record-icon svg > path {
+  fill: #888888 !important;
+}
+#records .record-wrapper .record .content > div:first-child .record-icons.blue {
+  border: 4px solid #0094CC;
+}
+#records .record-wrapper .record .content > div:first-child .record-icons.blue .record-icon {
+  margin: 4px;
+}
+#records .record-wrapper .record .content > div:first-child .record-icons.blue .record-icon svg > path {
+  fill: #0094CC !important;
+}
+#records .record-wrapper .record .content > div:first-child .record-icons.orange {
+  border: 4px solid #E75C00;
+}
+#records .record-wrapper .record .content > div:first-child .record-icons.orange .record-icon {
+  margin: 4px;
+}
+#records .record-wrapper .record .content > div:first-child .record-icons.orange .record-icon svg > path {
+  fill: #E75C00 !important;
+}
+#records .record-wrapper .record .content > div:first-child .record-icons.red {
+  border: 4px solid #F20D29;
+}
+#records .record-wrapper .record .content > div:first-child .record-icons.red .record-icon {
+  margin: 4px;
+}
+#records .record-wrapper .record .content > div:first-child .record-icons.red .record-icon svg > path {
+  fill: #F20D29 !important;
+}
+#records .record-wrapper .record .content > div:first-child .record-icons.yellow {
+  border: 4px solid #B88F00;
+}
+#records .record-wrapper .record .content > div:first-child .record-icons.yellow .record-icon {
+  margin: 4px;
+}
+#records .record-wrapper .record .content > div:first-child .record-icons.yellow .record-icon svg > path {
+  fill: #B88F00 !important;
+}
+#records .record-wrapper .record .content > div:first-child .checkcircle {
+  position: absolute;
+  left: 26px;
+  top: 8px;
+  width: 12px;
+  height: 12px;
+}
+.rtl #records .record-wrapper .record .content > div:first-child .checkcircle {
+  left: unset;
+  right: 26px;
+}
+#records .record-wrapper .record .content > div:first-child .record-data {
+  cursor: pointer;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0;
+  min-width: 100px;
+  margin-right: 10px;
+}
+.rtl #records .record-wrapper .record .content > div:first-child .record-data {
+  margin-right: unset;
+  margin-left: 10px;
+}
+#records .record-wrapper .record .content > div:first-child .record-data .title {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+#records .record-wrapper .record .content > div:first-child .record-data .login {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+#records .record-wrapper .record .content > div:first-child .record-data .login svg {
+  flex-shrink: 0;
+}
+#records .record-wrapper .record .content > div:first-child .record-data .login span {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: #565656;
+}
+.dark-mode #records .record-wrapper .record .content > div:first-child .record-data .login span {
+  color: #B3B3B3;
+}
+#records .record-wrapper .record .content > div:first-child .eyeball {
+  height: 22px;
+  width: 22px;
+  cursor: pointer;
+  margin-right: 8px;
+  flex-shrink: 0;
+}
+.rtl #records .record-wrapper .record .content > div:first-child .eyeball {
+  margin-right: unset;
+  margin-left: 8px;
+}
+#records .record-wrapper .record .content > div:first-child .eyeball path {
+  fill: #000;
+}
+#records .record-wrapper .record .content > div:first-child .fill {
+  height: 24px;
+  width: 24px;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  flex-shrink: 0;
+  border-radius: 4px;
+}
+#records .record-wrapper .record .content > div:first-child .fill path {
+  fill: #000;
+}
+#records .record-wrapper .record .content > div:first-child .fill[tooltip]::after {
+  right: 32px;
+}
+.rtl #records .record-wrapper .record .content > div:first-child .fill[tooltip]::after {
+  right: unset;
+}
+#records .record-wrapper .record .content > div:first-child .record-menu-icon {
+  height: 24px;
+  width: 24px;
+  flex-shrink: 0;
+  margin: 0 4px;
+  cursor: pointer;
+}
+#records .record-wrapper .record .content > div:first-child .record-menu-icon path {
+  fill: #000;
+}
+#records .record-wrapper .record .content > div:first-child #keeper-copy-item {
+  margin-right: 8px;
+  margin-top: 3px;
+  cursor: pointer;
+}
+.rtl #records .record-wrapper .record .content > div:first-child #keeper-copy-item {
+  padding-right: unset;
+  padding-left: 8px;
+}
+#records .record-wrapper .record .more {
+  margin-left: 52px;
+  margin-top: 12px;
+}
+#records .record-wrapper .record .more #hidden-qr {
+  display: flex;
+  align-items: center;
+  padding: 8px 12px;
+  border: 1px solid #d8d8d8;
+  border-radius: 4px;
+  cursor: pointer;
+}
+#records .record-wrapper .record .more #shown-qr {
+  display: inline-grid;
+}
+#records .record-wrapper .record .more #shown-qr #qrcanvas {
+  height: 172px !important;
+  width: 172px !important;
+  border: 1px solid #D8D8D8;
+  border-radius: 8px;
+  padding: 8px;
+}
+#records .record-wrapper .record .more #shown-qr #hide-qr-button {
+  margin-top: 8px;
+  cursor: pointer;
+}
+#records .record-wrapper .record .more #shown-qr #shown-qr-code-desc {
+  margin-top: 8px;
+  color: #565656;
+}
+#records .record-wrapper .record .more .field {
+  position: relative;
+  margin: 16px 0;
+  word-wrap: break-word;
+  padding-bottom: 6px;
+}
+#records .record-wrapper .record .more .field.url {
+  margin-bottom: 0;
+  padding-bottom: 12px;
+}
+#records .record-wrapper .record .more .field:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+#records .record-wrapper .record .more .field .field-value {
+  color: inherit;
+  border-bottom: 1px solid #D8D8D8;
+  margin-right: 8px;
+  width: 100%;
+  max-width: 220px;
+  min-height: 28px;
+}
+#records .record-wrapper .record .more .field .field-value.notes {
+  height: auto;
+  padding-bottom: 4px;
+  max-width: 274px;
+}
+#records .record-wrapper .record .more .field .label-tooltip:before {
+  display: none;
+}
+#records .record-wrapper .record .more .field .label-tooltip:after {
+  max-width: 336px;
+  left: -55px;
+  min-height: 36px;
+  height: auto;
+  white-space: normal;
+  text-align: center;
+  padding: 6px 12px;
+}
+#records .record-wrapper .record .more .field .field-name {
+  height: 24px;
+  color: #565656;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  max-width: 220px;
+}
+.dark-mode #records .record-wrapper .record .more .field .field-name {
+  color: #B3B3B3;
+}
+#records .record-wrapper .record .more .field .field-subtext {
+  font-size: 12px;
+  opacity: 0.7;
+}
+#records .record-wrapper .record .more .field.url .field-value {
+  color: #1B74DA;
+  cursor: pointer;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-wrap: initial;
+  white-space: nowrap;
+  word-break: break-all;
+}
+#records .record-wrapper .record .more .field.url .field-value:hover {
+  text-decoration: underline;
+}
+#records .record-wrapper .record .more .field.url .website-launch-icon {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  margin-left: 8px;
+}
+#records .record-wrapper .record .more .field .copy {
+  width: 24px;
+  height: 24px;
+  min-width: 24px;
+  min-height: 24px;
+  cursor: pointer;
+  margin-left: 12px;
+}
+#records .record-wrapper .record .more .field .copy .rtl {
+  margin-left: 0px;
+  margin-right: 12px;
+}
+#records .record-wrapper .record .more .field .copy path {
+  fill: #565656;
+}
+.dark-mode #records .record-wrapper .record .more .field .copy path {
+  fill: #B3B3B3 !important;
+}
+#records .record-wrapper .record .more .field.password .show, #records .record-wrapper .record .more .field.maskable .show {
+  height: 24px;
+  width: 24px;
+  min-height: 24px;
+  min-width: 24px;
+  cursor: pointer;
+  right: -2px;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+}
+.rtl #records .record-wrapper .record .more .field.password .show, .rtl #records .record-wrapper .record .more .field.maskable .show {
+  right: unset;
+}
+#records .record-wrapper .record .more .field.password .show path, #records .record-wrapper .record .more .field.maskable .show path {
+  fill: #000;
+}
+#records .record-wrapper .record .more .field.password .noview .copy, #records .record-wrapper .record .more .field.password .noview .show, #records .record-wrapper .record .more .field.maskable .noview .copy, #records .record-wrapper .record .more .field.maskable .noview .show {
+  display: none;
+}
+#records .record-wrapper .record .more .field.password .noview .restricted, #records .record-wrapper .record .more .field.maskable .noview .restricted {
+  display: block;
+}
+#records .record-wrapper .record .more .field.password .field-value.masked {
+  font-size: 24px;
+}
+#records .record-wrapper .record .more .field.password .field-value {
+  margin-right: 16px;
+}
+#records .record-wrapper .record .more .field.password .restricted {
+  display: none;
+  font-size: 10px;
+}
+#records .record-wrapper .record .more .field.password .show {
+  right: -2px;
+}
+#records .record-wrapper .record .more .field.multiline {
+  white-space: pre-wrap;
+}
+#records .record-wrapper .record .more .field.cardnumber .field-value {
+  display: flex;
+  align-items: center;
+}
+#records .record-wrapper .record .more .field.otp {
+  display: flex;
+}
+#records .record-wrapper .record .more .field.otp .totp-top-container {
+  width: 100%;
+}
+#records .record-wrapper .record .more .field.otp .countdown-circle {
+  height: 30px;
+  width: 30px;
+  margin-top: 5px;
+  margin-right: 15px;
+  flex-shrink: 0;
+}
+#records .record-wrapper .record .more .field.otp .field-value {
+  font-size: large;
+  width: 167px;
+}
+#records .record-wrapper .record .more .ref-record > .field:first-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+#records .record-wrapper .record .more .ref-record > .field:not(:first-child) {
+  margin-left: 6px;
+}
+.rtl #records .record-wrapper .record .more .ref-record > .field:not(:first-child) {
+  margin-left: unset;
+  margin-right: 6px;
+}
+#records .record-wrapper .record .more .record-to-vault {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  margin: 0 5px 5px 0;
+  padding: 10px 15px;
+  color: #000;
+  background-color: #f2f2f2;
+  border-radius: 3px;
+}
+#records .record-wrapper .record .more .record-to-vault .field-value {
+  font-size: 14px;
+  opacity: 1;
+  margin-bottom: 0px;
+}
+#records .record-wrapper .record .more .record-to-vault .launch {
+  width: 20px;
+  height: 20px;
+}
+#records .record-wrapper .record .more .record-to-vault .launch path {
+  fill: #ffc700;
+}
+#records .record-wrapper .record .more button {
+  margin: 10px 0 5px 0;
+}
+
+#data-body .record-count {
+  color: black;
+  padding: 0 0 8px 24px;
+}
+.rtl #data-body .record-count {
+  padding: 0px 24px 8px 0;
+}
+
+body.rtl #records .record-wrapper .record .more .field .field-value {
+  margin-right: unset;
+  margin-left: 8px;
+}
+body.rtl #records .record-wrapper .record .more .field.password .field-value {
+  margin-right: unset;
+  margin-left: 16px;
+}
+
+.record-menu {
+  position: absolute;
+  width: 240px;
+  top: 0;
+  right: 24px;
+  background: white;
+  box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.3);
+  border: 1px solid #F0F0F0;
+  color: black;
+  font-size: 15px;
+  line-height: 24px;
+  font-family: "Overpass";
+  border-radius: 8px;
+  padding: 8px;
+  z-index: 2;
+}
+.rtl .record-menu {
+  right: unset;
+  left: 24px;
+}
+.record-menu .record-menu-item {
+  padding: 8px 16px;
+  border-radius: 4px;
+  user-select: none;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.rtl .record-menu .record-menu-item {
+  padding: 8px 16px 8px 24px;
+}
+.record-menu .record-menu-item div {
+  height: 24px;
+  width: 24px;
+  margin: 0 8px 0 0;
+}
+.record-menu .record-menu-item div path {
+  fill: black;
+}
+.rtl .record-menu .record-menu-item div {
+  margin: 0 0 0 8px;
+}
+.record-menu .record-menu-item:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.record-menu.dark-mode {
+  background: #363636;
+  box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.7);
+  color: white;
+  border: none;
+}
+.record-menu.dark-mode path {
+  fill: white !important;
+}
+.record-menu.dark-mode .record-menu-item:hover {
+  background-color: #565656;
+}
+.record-menu .record-menu-divider {
+  height: 1px;
+  padding: 8px 0;
+  background: #D8D8D8;
+  background-clip: content-box;
+  box-sizing: content-box;
+}

@@ -1,0 +1,15 @@
+.rtl .countdown-circle {
+  margin-left: 20px;
+  margin-right: 0;
+}
+.countdown-circle .base {
+  stroke: #D2D2D2;
+}
+.countdown-circle .progress {
+  stroke: #1B6CD2;
+  transition: stroke-dashoffset 1s linear;
+}
+.countdown-circle .base, .countdown-circle .progress {
+  fill: none;
+  stroke-width: 4px;
+}

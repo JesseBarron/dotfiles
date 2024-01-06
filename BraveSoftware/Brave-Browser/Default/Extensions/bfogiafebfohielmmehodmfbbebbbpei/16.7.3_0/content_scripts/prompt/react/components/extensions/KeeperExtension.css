@@ -1,0 +1,7 @@
+div#keeper-extension-root #keeper-extension.rtl {
+  direction: rtl;
+}
+div#keeper-extension-root #keeper-extension.rtl .keeper-logo,
+div#keeper-extension-root #keeper-extension.rtl keeper-logo {
+  background-position-x: 98%;
+}
