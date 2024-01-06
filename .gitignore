@@ -1,7 +1,8 @@
 *
-*/
+/*
 !alacritty/
-!tmux/
+!.gitignore
+!tmux/*
 tmux/plugins
 !nvim/
 !lvim/
