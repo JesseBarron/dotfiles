@@ -1,6 +1,0 @@
-2023/12/31-22:05:41.261 6974 Creating DB /home/jesse/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_www.dickssportinggoods.com_0.indexeddb.leveldb since it was missing.
-2023/12/31-22:05:41.272 6974 Reusing MANIFEST /home/jesse/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_www.dickssportinggoods.com_0.indexeddb.leveldb/MANIFEST-000001
-2023/12/31-22:06:35.837 6974 Level-0 table #5: started
-2023/12/31-22:06:35.842 6974 Level-0 table #5: 5227 bytes OK
-2023/12/31-22:06:35.848 6974 Delete type=0 #3
-2023/12/31-22:06:35.848 6974 Manual compaction at level-0 from (begin) .. (end); will stop at (end)
