@@ -6,4 +6,5 @@ tmux/plugins
 !nvim/
 !lvim/
 lvim/workspace
+lvim/lazy-lock.json
 
