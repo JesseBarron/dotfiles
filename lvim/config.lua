@@ -19,6 +19,9 @@ dap.configurations.php = {
     name = 'Listen for Xdebug',
     port = 9003,
     log = false,
+    -- serverSourceRoot = '/var/www/',
+    -- localSourceRoot = '/home/jesse/questions/backend/app-api',
+    -- localSourceRoot = vim.fn.expand("%:p:h").."/"
     pathMappings = {
       ["/var/www"] = "/home/jesse/questions/backend/app-api"
     }
