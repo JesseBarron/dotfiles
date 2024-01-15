@@ -31,6 +31,7 @@ dap.configurations.php = {
 require 'user.plugins'
 require 'user.keymappings'
 require 'user.globals'
+require 'neorg.auto-push'
 
 -- Other options
 vim.opt.shiftwidth = 2        -- the number of spaces inserted for each indentation
