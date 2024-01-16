@@ -1,29 +1,31 @@
--- Goal
--- I want changes to neorg files to be autoamatically be pushed in the background
+DEFAULT_COMMIT_MSG = "Neorg Auto Commit"
+NEORG_DIR = "~/neorg"
 
--- How will this be done?
+-- VimLeavePre -- Could be used to squash commits and push changes before closing vim
 
--- Anytime a neorg file is closd, a command will check if there are changes in the neorg directory
--- if there is, then a new commit chould be made, for now we can use a generic commit message. Then it should be pushed.
--- Ideally this should be done in the background
-
-
--- Use a vim conmmand to listen for buffer closing
--- autocommands to listen with
--- BufWinLeave
-
-vim.api.nvim_create_autocmd({"BufWinLeave"}, {
+-- BufUnload - Only commit when closing norg buffers
+vim.api.nvim_create_autocmd({"BufUnload"}, {
   pattern  = "*.norg",
   callback =  function(ev)
-    local filePath = string.gsub(ev.match, ev.file, "")
-    local output = vim.fn.systemlist('git -C '..filePath..' status -s')
+    local output = vim.fn.systemlist('git -C '..NEORG_DIR..' status -s')
 
-    if RepoHasChanges(output) then print("Ok We're pushing changes for this file".. ev.file) end
+    if RepoHasChanges(output) then
+      print("Ok We're pushing changes for this file ".. ev.file)
+      CommitChanges()
+      pushChanges()
+    end
   end
 })
 
+function pushChanges()
+  local output = vim.fn.systemlist('git -C '..NEORG_DIR..' status')
+  LOG(output)
+end
 
--- AreNorgBufsOpen: Checks if any neorg buffs are open
+function CommitChanges()
+  vim.fn.systemlist('git -C '..NEORG_DIR..' add .')
+  vim.fn.systemlist('git -C '..NEORG_DIR..' commit -m "'.. DEFAULT_COMMIT_MSG..'"')
+end
 
 function RepoHasChanges(gitStatus)
   if next(gitStatus) == nil then return false end
