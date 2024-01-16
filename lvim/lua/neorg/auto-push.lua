@@ -12,7 +12,7 @@ vim.api.nvim_create_autocmd({"BufUnload"}, {
     if RepoHasChanges(output) then
       print("Ok We're pushing changes for this file ".. ev.file)
       CommitChanges()
-      pushChanges()
+      -- pushChanges()
     end
   end
 })
