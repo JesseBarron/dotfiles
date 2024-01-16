@@ -33,6 +33,7 @@ lvim.plugins = {
       Work_dir = Root_dir .. '/work';
       Personal_dir = Root_dir .. '/personal';
       Notes_dir = Root_dir .. '/notes';
+      Projects_dir = Root_dir .. '/projects';
 
       require('neorg').setup {
         load = {
@@ -63,6 +64,7 @@ lvim.plugins = {
                 oncall = Work_dir..'/on-call',
                 personal = Personal_dir,
                 notes = Notes_dir,
+                projects = Projects_dir,
               },
             }
           }
