@@ -19,7 +19,7 @@ vim.api.nvim_create_autocmd({"BufUnload"}, {
 
 function pushChanges()
   local output = vim.fn.systemlist('git -C '..NEORG_DIR..' status')
-  LOG(output)
+  -- LOG(output)
 end
 
 function CommitChanges()
