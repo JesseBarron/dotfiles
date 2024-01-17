@@ -2,6 +2,9 @@ import = [
   "~/.config/alacritty/themes/catppuccin_mocha.toml"
 ]
 
+[window]
+decorations = 'None'
+
 [font]
 size = 14
 
