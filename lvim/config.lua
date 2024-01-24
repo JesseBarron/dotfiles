@@ -37,6 +37,6 @@ require 'neorg.auto-push'
 vim.opt.shiftwidth = 2        -- the number of spaces inserted for each indentation
 vim.opt.tabstop = 2           -- insert 2 spaces for a tab
 vim.opt.relativenumber = true -- relative line numbers
-vim.opt.cc = 120              -- set right margin at col 120
+vim.opt.cc = "120"              -- set right margin at col 120
 
 vim.o.termguicolors = true

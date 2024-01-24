@@ -21,3 +21,6 @@ lvim.builtin.which_key.mappings['O'] = {
   w = { ':Neorg workspace <Right>', "Open a workspace of your choosing" },
   j = { '<cmd>Neorg journal today<CR>', 'Open journey entry for today' }
 }
+
+-- Datagrip launcher
+vim.keymap.set('n', '<C-D>', "<cmd>!datagrip &>/dev/null & <cr><cr>");
