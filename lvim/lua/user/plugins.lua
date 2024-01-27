@@ -77,4 +77,12 @@ lvim.plugins = {
     'JesseBarron/docker-buddy.nvim',
     config = function() require 'docker-buddy' end
   },
+  {
+    'David-Kunz/gen.nvim',
+    opts = {
+      model = 'mistral',
+      display_mode = 'float',
+      auto_close = false
+    }
+  }
 }
