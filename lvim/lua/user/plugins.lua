@@ -1,5 +1,6 @@
 -- Plugins
 lvim.plugins = {
+  {'phpactor/phpactor'},
   {
     'mbbill/undotree',
     config = function()
@@ -22,12 +23,15 @@ lvim.plugins = {
   { 'nvim-lua/plenary.nvim' },
   -- NEORG CONFIGURATION
   {
+    "vhyrro/luarocks.nvim",
+    priority = 1000,
+    config = true,
+  },
+  {
     "nvim-neorg/neorg",
+    version = "7.0.0",
     build = ":Neorg sync-parsers",
-    dependencies =  {
-      "nvim-lua/plenary.nvim",
-      { "pysan3/neorg-templates", dependencies = { "L3MON4D3/LuaSnip" } }, -- ADD THIS LINE
-    },
+    dependencies =  { "luarocks.nvim" },
     config = function ()
       Root_dir = '~/neorg';
       Work_dir = Root_dir .. '/work';
@@ -37,11 +41,6 @@ lvim.plugins = {
 
       require('neorg').setup {
         load = {
-          ['external.templates'] = {
-            config = {
-              templates_dir = '~/neorg/templates',
-            },
-          },
           ['core.completion'] = {
             config = {
               engine = 'nvim-cmp',
@@ -73,6 +72,9 @@ lvim.plugins = {
     end,
   },
   -- END: NEORG CONFIGURATION
+  -- {
+  --   'github/copilot.vim'
+  -- }:
   {
     'JesseBarron/docker-buddy.nvim',
     config = function() require 'docker-buddy' end
