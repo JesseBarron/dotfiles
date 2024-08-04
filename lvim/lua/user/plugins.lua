@@ -72,9 +72,9 @@ lvim.plugins = {
     end,
   },
   -- END: NEORG CONFIGURATION
-  -- {
-  --   'github/copilot.vim'
-  -- }:
+  {
+    'github/copilot.vim'
+  },
   {
     'JesseBarron/docker-buddy.nvim',
     config = function() require 'docker-buddy' end
