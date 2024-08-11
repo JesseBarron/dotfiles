@@ -72,19 +72,19 @@ lvim.plugins = {
     end,
   },
   -- END: NEORG CONFIGURATION
-  {
-    'github/copilot.vim'
-  },
-  {
-    'JesseBarron/docker-buddy.nvim',
-    config = function() require 'docker-buddy' end
-  },
-  {
-    'David-Kunz/gen.nvim',
-    opts = {
-      model = 'mistral',
-      display_mode = 'float',
-      auto_close = false
-    }
-  }
+  -- {
+  --   'github/copilot.vim'
+  -- },
+  -- {
+  --   'JesseBarron/docker-buddy.nvim',
+  --   config = function() require 'docker-buddy' end
+  -- },
+  -- {
+  --   'David-Kunz/gen.nvim',
+  --   opts = {
+  --     model = 'mistral',
+  --     display_mode = 'float',
+  --     auto_close = false
+  --   }
+  -- }
 }

@@ -18,3 +18,4 @@ rm -rf $TMPDIR
 
 echo "linking config files"
 bash "~/.dotfiles/link-dotfiles.sh"
+echo "finished linking config files"

@@ -29,9 +29,9 @@ dap.configurations.php = {
 }
 
 require 'user.plugins'
-require 'user.keymappings'
-require 'user.globals'
-require 'neorg.auto-push'
+-- require 'user.keymappings'
+-- require 'user.globals'
+-- require 'neorg.auto-push'
 
 -- Other options
 vim.opt.shiftwidth = 2        -- the number of spaces inserted for each indentation
@@ -41,3 +41,5 @@ vim.opt.cc = "120"              -- set right margin at col 120
 vim.opt.spell = true
 
 vim.o.termguicolors = true
+
+vim.keymap.set('n', 'K', vim.lsp.buf.hover, {})
