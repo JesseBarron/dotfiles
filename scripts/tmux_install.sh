@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo"Installing tmux"
+echo "Installing tmux"
 # install tmux
 git clone https://github.com/tmux/tmux.git
 cd tmux
@@ -10,3 +10,4 @@ make && sudo make install
 
 # Install tmux plugin manager
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+echo "Finished installing tmux"
