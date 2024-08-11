@@ -1,5 +1,6 @@
 #!/bin/bash
 
+echo"Installing tmux"
 # install tmux
 git clone https://github.com/tmux/tmux.git
 cd tmux
