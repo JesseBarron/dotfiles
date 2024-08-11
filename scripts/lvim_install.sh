@@ -5,7 +5,8 @@ curl -L -R -O https://www.lua.org/ftp/lua-5.4.7.tar.gz
 tar zxf lua-5.4.7.tar.gz
 cd lua-5.4.7
 make all test
-mv /src/lua /usr/bin/lua
+mv /src/lua /
+sudo ln -s /lua /usr/bin/lua
 echo "Finished installing Lua"
 
 # attempt to install nvim
