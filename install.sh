@@ -1,5 +1,9 @@
 #!/bin/bash
 
+echo "linking config files"
+bash ~/.dotfiles/link-dotfiles.sh
+echo "finished linking config files"
+
 TMPDIR=$(mktemp -d)
 
 CURRENT=$PWD
@@ -16,6 +20,3 @@ cd $CURRENT
 
 rm -rf $TMPDIR
 
-echo "linking config files"
-bash ~/.dotfiles/link-dotfiles.sh
-echo "finished linking config files"
