@@ -19,4 +19,3 @@ echo "Finished install scripts"
 cd $CURRENT
 
 rm -rf $TMPDIR
-
