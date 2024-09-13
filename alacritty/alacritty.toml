@@ -8,9 +8,9 @@ decorations = 'None'
 [font]
 size = 14 
 
-# [font.normal]
-# family = "JetBrainsMono NF"
-# style = "Regular"
+[font.normal]
+family = "JetBrainsMono NF"
+style = "Regular"
 
 [font.bold]
 family = "JetBrainsMono NF"
