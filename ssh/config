@@ -1,0 +1,5 @@
+Host *gitpod.io
+IdentityFile ~/.ssh/id_ed25519
+LocalForward 8080 localhost:80
+LocalForward 7910 localhost:7910
+# Add other local forward addresses here like codeceptjs

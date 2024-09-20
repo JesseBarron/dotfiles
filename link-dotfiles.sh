@@ -14,3 +14,5 @@ ln -sf $(pwd)/alacritty $DEST
 # ln -sf $(pwd)/lvim $DEST
 ln -sf $(pwd)/nvim $DEST
 ln -sf $(pwd)/tmux $DEST
+ln -sf $(pwd)/ssh.sh ~/
+ln -sf $(pwd)/ssh/config ~/.ssh/config

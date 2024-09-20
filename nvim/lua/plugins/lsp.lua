@@ -25,7 +25,7 @@ return {
         "prettierd",
         "shfmt",
         "stylua",
-        "ts_sl",
+        "typescript-language-server",
       },
     },
   },
