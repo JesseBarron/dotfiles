@@ -29,8 +29,14 @@ return {
     },
     config = function()
       require("org-roam").setup({
-        directory = "~/orgfiles/roam",
+        directory = "~/orgfiles",
       })
+    end,
+  },
+  {
+    "akinsho/org-bullets.nvim",
+    config = function()
+      require("org-bullets").setup()
     end,
   },
 }
