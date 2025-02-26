@@ -26,11 +26,13 @@ return {
         javascript = { "prettier", "prettierd", stop_after_first = true },
         typescript = { "prettier", "prettierd", stop_after_first = true },
         html = { "prettier", "prettierd", stop_after_first = true },
-        php = { "pint" },
       },
       default_format_opts = {
         lsp_format = "fallback",
       },
     },
+  },
+  {
+    "mbbill/undotree",
   },
 }
