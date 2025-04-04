@@ -2,17 +2,8 @@
 
 DEST=~/.config
 
-ln -sf $(pwd)/alacritty $DEST
-
-# Delete default lvim config
-# LVIM_CONFIG_DIR="$DEST/lvim"
-# if test -d $LVIM_CONFIG_DIR; then
-#   echo "Deleting default lvim config"
-#   rm -rf $LVIM_CONFIG_DIR
-# fi
-
-# ln -sf $(pwd)/lvim $DEST
-ln -sf $(pwd)/nvim $DEST
-ln -sf $(pwd)/tmux $DEST
-ln -sf $(pwd)/ssh.sh ~/
-ln -sf $(pwd)/ssh/config ~/.ssh/config
+cp -rf $(pwd)/alacritty $DEST
+cp -rf $(pwd)/nvim $DEST
+cp -rf $(pwd)/tmux $DEST
+cp -rf $(pwd)/ssh.sh ~/
+cp -rf $(pwd)/ssh/config ~/.ssh/config
