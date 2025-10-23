@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sudo apt-get update -qq update && sudo apt-get -qq --yes --force-yes install fzf
+# sudo apt-get update -qq update && sudo apt-get -qq --yes --force-yes install fzf
 
 # attempt to install nvim
 echo "Installing Neovim"
