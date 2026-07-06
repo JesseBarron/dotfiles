@@ -1,3 +1,11 @@
+## START Gitpod Flex VS Code INTEGRATION
+## This section is managed by Gitpod. Any manual changes will be lost.
+Include "code_gitpod_flex.d/config"
+## END Gitpod Flex VS Code INTEGRATION
+
+# Gitpod Flex CLI SSH Integration
+Include "gitpod/config"
+# End of Gitpod Flex CLI SSH Integration
 ## START GITPOD INTEGRATION
 ## This section is managed by Gitpod. Any manual changes will be lost.
 Include "code_gitpod.d/config"
@@ -6,6 +14,23 @@ Include "code_gitpod.d/config"
 Host *gitpod.io
 IdentityFile ~/.ssh/id_ed25519
 LocalForward 8080 localhost:80
+LocalForward 8888 localhost:8888
 LocalForward 7910 localhost:7910
 LocalForward 16200 localhost:16200
 # Add other local forward addresses here like codeceptjs
+
+Host workstation
+    LocalForward 8080 localhost:80
+    LocalForward 8888 localhost:8888
+    LocalForward 7910 localhost:7910
+    LocalForward 16200 localhost:16200
+
+# >>> GCP Workstation (managed by connect.py) >>>
+Host pb-gcp-workstation
+    HostName localhost
+    Port 2222
+    User user
+    StrictHostKeyChecking no
+    UserKnownHostsFile /dev/null
+    LogLevel ERROR
+# <<< GCP Workstation <<<

@@ -8,10 +8,24 @@ vim.pack.add({
 -- Basic LSP setup will go here
 local lspconfig = require('lspconfig')
 
+-- Configure padding/border choices
+local float_opts = {
+  border = 'single', -- Adds margin space. Options: "single", "double", "rounded", "solid"
+  max_width = 80,
+  max_height = 20,
+}
+
+-- Hover documentation padding
+vim.keymap.set('n', 'K', function()
+  vim.lsp.buf.hover(float_opts)
+end, { desc = "LSP Hover Documentation" })
+
+-- Signature help padding
+vim.keymap.set('i', '<C-k>', function()
+  vim.lsp.buf.signature_help(float_opts)
+end, { desc = "LSP Signature Help" })
 
 require('config.lsp.gopls')
-
-
 
 -- Autocomplete on demand
 vim.keymap.set('i', '<A-space>', function()

@@ -6,6 +6,12 @@ vim.pack.add({
   'https://github.com/nvim-telescope/telescope-fzf-native.nvim'
 })
 
+require('telescope').setup({
+  defaults = {
+    path_display = { 'filename_first' }
+  }
+})
+
 -- Auto-build telescope-fzf-native if not built
 local fzf_native_path = vim.fn.stdpath('data') .. '/site/pack/core/opt/telescope-fzf-native.nvim'
 local build_dir = fzf_native_path .. '/build'
