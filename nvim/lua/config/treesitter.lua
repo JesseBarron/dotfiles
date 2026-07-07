@@ -9,6 +9,9 @@ treesitter.install({ 'templ', 'go', 'lua' })
 
 vim.api.nvim_create_autocmd('FileType', {
   pattern = { 'go', 'templ', 'lua' },
-  callback = function() vim.treesitter.start() end,
+  callback = function() 
+    vim.treesitter.start() 
+    vim.bo.indentexpr = "v:lua.require'nvim-treesitter'.indentexpr()"
+  end,
 })
 
