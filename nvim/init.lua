@@ -54,12 +54,13 @@ require('config.treesitter')
 
 require('config.colorschemes')
 
-require('config.neogit')
-
 require('config.gitsigns')
 
 require('config.autoclose')
 
 require('config.term')
 
+require('config.lazygit')
+
+require('config.octo')
 
