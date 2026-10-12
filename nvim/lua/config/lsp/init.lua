@@ -26,6 +26,9 @@ vim.keymap.set('i', '<C-k>', function()
 end, { desc = "LSP Signature Help" })
 
 require('config.lsp.gopls')
+require('config.lsp.python')
+require('config.lsp.dart')
+require('config.lsp.c')
 
 -- Autocomplete on demand
 vim.keymap.set('i', '<A-space>', function()

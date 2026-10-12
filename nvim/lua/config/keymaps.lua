@@ -49,7 +49,5 @@ end, { noremap = true, silent = true, desc = 'Push File Path to "+" Registry' })
 
 
 
-vim.keymap.set('n', '<a-j>', '<cmd>m .+1<cr>', {desc='Move line down'})
-vim.keymap.set('n', '<a-k>', '<cmd>m .-2<cr>', {desc='Move line up'})
-vim.keymap.set('v', '<a-j>', ":m '>+1<cr>gv=gv", {desc='Move block down'})
-vim.keymap.set('v', '<a-k>', ":m '<-2<cr>gv=gv", {desc='Move block up'})
+vim.keymap.set({'v', 'n'}, '<a-j>', '<cmd>m .+1<cr>', {desc='Move block down'})
+vim.keymap.set({'v', 'n'}, '<a-k>', '<cmd>m .-2<cr>', {desc='Move block up'})
